@@ -14,7 +14,7 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Rock+Salt" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald|Rock+Salt" rel="stylesheet">
 
   <meta name="author" content="Jeremy Bowden">
   <meta name="description" content="Personal web page of Jeremy Bowden, software developer from Leicester, England. Come on in and have a look around.">
@@ -43,7 +43,7 @@
   <![endif]-->
 
   <header>
-    <div class="sticky-mobile grid-menu">
+    <div class="mobile-banner grid-menu">
       <div id="mobile-menu-burger" class="menu-icon">
         <span></span>
         <span></span>
@@ -53,7 +53,13 @@
       <div id="mobile-menu-name">Jeremy Bowden</div>
       <!-- <div id="mobile-menu-socialmedia">Social media logos</div> -->
     </div>
-    <div class="sticky-desktop grid-menu">
+    <div id="mobile-menu" class="hidden text-centred">
+      <p>Home</p>
+      <p>Projects</p>
+      <p>More about me</p>
+      <p>Contact</p>
+    </div>
+    <div class="desktop-banner grid-menu">
       Hello desktop
     </div>
   </header>
@@ -63,7 +69,15 @@
     </div>
     <div id="hello">Hello! I'm Jeremy</div>
     <div id="blurb">Here is some info about me</div>
-
+    <div id="photo">
+      <img src="img/v-11-512.png">
+    </div>
+  </section>
+  <section id="section2" class="grid-welcome">
+    <div id="photo">
+    </div>
+    <div id="hello">Hello! I'm Jeremy</div>
+    <div id="blurb">Here is some info about me</div>
   </section>
 
 
