@@ -5,13 +5,21 @@ const menuIcon = document.getElementById("mobile-menu-burger");
 
 menuIcon.addEventListener("click", function () {
   if (menuIcon.classList.contains("open")) {
-    mobileMenu.classList.add("hidden");
     menuIcon.classList.remove("open");
+    mobileMenu.classList.add("hidden");
   } else {
-    mobileMenu.classList.remove("hidden");
     menuIcon.classList.add("open");
+    mobileMenu.classList.remove("hidden");
   }
 });
+
+// event handler for the menu options on mobile devices
+mobileMenu.addEventListener("click", function () {
+  mobileMenu.classList.add("hidden");
+  menuIcon.classList.remove("open");
+});
+
+
 
 
 // event handler for down arrows

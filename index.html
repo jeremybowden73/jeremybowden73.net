@@ -54,58 +54,62 @@
     </div>
     <div id="mobile-menu" class="hidden text-centred">
       <p>
-        <a href="#section1">Home</a>
+        <a href="#linkToSection1">Home</a>
       </p>
       <p>
-        <a href="#section2">Projects</a>
+        <a href="#linkToSection2">Projects</a>
       </p>
       <p>
-        <a href="#section3">Contact me</a>
+        <a href="#linkToSection3">Contact me</a>
       </p>
       <p>
-        <a href="#section4">More about me</a>
+        <a href="#linkToSection4">More about me</a>
       </p>
     </div>
     <div class="desktop-banner grid-menu">
       Hello desktop
     </div>
   </header>
-  <section id="section1" class="grid-home">
-    <a href="mailto:jeremy@jeremybowden.net" title="email: jeremy@jeremybowden.net" id="email">
-      <img src="img/email.png" alt="email icon">
-    </a>
-    <a href="https://twitter.com/TheJeremyBowden" title="Twitter" id="twitter">
-      <img src="img/Twitter_Logo_Blue.png" alt="Twitter logo">
-    </a>
-    <a href="https://github.com/jeremybowden73" title="GitHub" id="github">
-      <img src="img/GitHub-Mark-Trans.png" alt="GitHub logo">
-    </a>
-    <a href="" title="LinkedIn" id="linkedin">
-      <img src="img/email.png" alt="LinkedIn icon">
-    </a>
-    <div id="photo">
-      <img src="img/jeremy-small-square.png">
-    </div>
-    <div id="hello" class="text-header">Hello! I'm Jeremy</div>
-    <div id="blurb" class="text-centred">
-      <p>Self-taught Junior-level developer with experience in front-end and back-end technologies (JavaScript, Node.js, CSS3,
-        HTML5, Python), frameworks (Express, Flask) and other good stuff (C, APIs, Git).</p>
-    </div>
-    <div id="downArrow">
-      <img src="img/v-11-512.png">
-    </div>
-  </section>
-  <section id="section2" class="grid-home">
-    <div id="heading" class="text-header">Projects</div>
-  </section>
-
-  <section id="section3" class="grid-home">
-    <div id="heading" class="text-header">Contact me</div>
-  </section>
-
-  <section id="section4" class="grid-home">
-    <div id="heading" class="text-header">A bit more about how I got here...</div>
-  </section>
+  <scroll-container>
+    <a id="linkToSection1"></a>
+    <section id="section1" class="grid-home">
+      <a href="mailto:jeremy@jeremybowden.net" title="email: jeremy@jeremybowden.net" id="email">
+        <img src="img/email.png" alt="email icon">
+      </a>
+      <a href="https://twitter.com/TheJeremyBowden" title="Twitter" id="twitter">
+        <img src="img/Twitter_Logo_Blue.png" alt="Twitter logo">
+      </a>
+      <a href="https://github.com/jeremybowden73" title="GitHub" id="github">
+        <img src="img/GitHub-Mark-Trans.png" alt="GitHub logo">
+      </a>
+      <a href="" title="LinkedIn" id="linkedin">
+        <img src="img/email.png" alt="LinkedIn icon">
+      </a>
+      <div id="photo">
+        <img src="img/jeremy-small-square.png">
+      </div>
+      <div id="hello" class="text-header">Hello! I'm Jeremy</div>
+      <div id="blurb" class="text-centred">
+        <p>Self-taught Junior-level developer with experience in front-end and back-end technologies (JavaScript, Node.js, CSS3,
+          HTML5, Python), frameworks (Express, Flask) and other good stuff (C, APIs, Git).</p>
+      </div>
+      <div id="downArrow">
+        <img src="img/v-11-512.png">
+      </div>
+    </section>
+    <a id="linkToSection2"></a>
+    <section id="section2" class="grid-home">
+      <div id="heading" class="text-header">Projects</div>
+    </section>
+    <a id="linkToSection3"></a>
+    <section id="section3" class="grid-home">
+      <div id="heading" class="text-header">Contact me</div>
+    </section>
+    <a id="linkToSection4"></a>
+    <section id="section4" class="grid-home">
+      <div id="heading" class="text-header">A bit more about how I got here...</div>
+    </section>
+  </scroll-container>
 
 
 
