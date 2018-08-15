@@ -109,16 +109,13 @@ textarea {
    to allow for the sticky header.
    http://darktef.github.io/posts/2017-03-offset-html-anchors-for-fixed-header-with-css
 */
-:target {
+/* :target {
   display: block;
   position: relative;
   top: -15vh; 
   visibility: hidden;
-}
+} */
 
-scroll-container {
-    scroll-behavior: smooth;
-}
 
 a:link {
     text-decoration: none;
@@ -249,10 +246,14 @@ div {
 
 #mobile-menu {
     position: fixed;
-    top: 15vh;
+    top: 80px;
     width: 100%;
     background-color: lightblue;
     z-index: 2;
+}
+
+#mobile-menu p {
+    cursor: pointer;
 }
 
 
@@ -474,7 +475,7 @@ div {
 @media only screen and (max-width: 768px) {
     .mobile-banner {
         display: grid;
-        height: 15vh;
+        height: 80px;
     }
 
     .desktop-banner {
