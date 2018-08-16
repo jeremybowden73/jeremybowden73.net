@@ -42,11 +42,9 @@ $("#linkTo4").click(function () {
 });
 
 
-
 // event handler for down arrows
-// const downArrow = document.getElementById("downArrow");
-// downArrow.addEventListener("click", function () {
-
-// })
-
-
+$("#downArrow").click(function () {
+  $('html, body').animate({
+    scrollTop: $("#section2").offset().top - 80
+  }, 1000);
+});
