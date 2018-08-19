@@ -400,6 +400,10 @@ div {
     grid-column: 2 / 7;
 }
 
+.project .projectPicture:hover {
+    cursor: pointer;
+}
+
 .project .projectTitle {
     grid-row: 2 / 3; 
     grid-column: 8 / 13;

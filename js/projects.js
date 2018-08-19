@@ -29,8 +29,10 @@ const projectsInformation = [
 
 // function to create a Project "card" and append it to the div with class="gridContainer" 
 function createProject(info) {
-  $('<div></div>').attr({ class: `project ${info.linkType}`, id: info.link })
-    .append($('<div></div>').attr({ class: "projectImage" }).append($('<img>').attr({ class: "projectPicture", src: info.projectPicture }).css("border-color", info.color)))
+  $('<div></div>').attr({ class: "project" })
+    .append($('<div></div>').attr({ class: "projectImage" }).append($('<img>').attr({
+      class: `projectPicture ${info.linkType}`, id: info.link, src: info.projectPicture
+    }).css("border-color", info.color)))
     .append($('<div></div>').attr({ class: "projectGithubLink projectText" }).text('View project on ')
       .append($('<a></a>').attr({ title: "GitHub", href: info.gitHubURL }).text(" GitHub").append($('<img>').attr({ class: "gitHubImage", src: "img/GitHub-Mark-Trans.png", alt: "GitHub logo" }))))
     .append($('<div></div>').attr({ class: "projectTitle" }).text(info.title))
@@ -103,27 +105,21 @@ function modalWindow() {
 
 
 
-// event handler for when a Project is clicked on
-// if the div with class="project" contains a URL to a youtube video, open it in the modal view, or
-// if it contains a URL to a webpage, open it in a new browser window
+// event handler for when a Project image is clicked on
+// if the element clicked on has class="youtube", open the element's id value (a youtube URL) in the modal view, or
+// if it has class="webpage", open the element's id value (a URL) in a new browser window
 const divGridContainer = document.querySelector(".gridContainer");
 divGridContainer.onclick = function (event) {
-  // traverse up the DOM tree from the event.target, until we get to the DIV with class="project"
-  let clickedDiv = event.target;
-  while (!clickedDiv.classList.contains("project")) {
-    clickedDiv = clickedDiv.parentNode;
-  }
-
-  if (clickedDiv.classList.contains("youtube")) {
+  if (event.target.classList.contains("youtube")) {
     // get the iframe div
     let iframeDiv = document.getElementsByTagName("iframe")[0];
     // assign the url to the src attribute
-    iframeDiv.src = clickedDiv.id;
+    iframeDiv.src = event.target.id;
     // show the modal view
     modal.style.display = "grid";
-  } else {
+  } else if (event.target.classList.contains("webpage")) {
     // open the URL in a new window
-    window.open(clickedDiv.id);
+    window.open(event.target.id);
   }
 };
 
