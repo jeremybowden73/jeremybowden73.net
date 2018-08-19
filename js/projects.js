@@ -1,7 +1,9 @@
 // data for each of the projects in the Projects section
 const projectsInformation = [
   {
+    color: "gray",
     projectPicture: "img/tictactoe.png",
+    videoOrDemo: "demo",
     linkType: "webpage",
     link: "http://paxamrecords.com/",
     gitHubURL: "https://github.com/jeremybowden73/Tic-Tac-Toe",
@@ -10,7 +12,9 @@ const projectsInformation = [
     knowledge: "tictac knowledge"
   },
   {
+    color: "red",
     projectPicture: "img/employee-directory.png",
+    videoOrDemo: "video",
     linkType: "youtube",
     link: "https://www.youtube.com/embed/1vFmrmOY7qM",
     gitHubURL: "",
@@ -26,11 +30,11 @@ const projectsInformation = [
 // function to create a Project "card" and append it to the div with class="gridContainer" 
 function createProject(info) {
   $('<div></div>').attr({ class: `project ${info.linkType}`, id: info.link })
-    .append($('<div></div>').attr({ class: "projectImage" }).append($('<img>').attr({ class: "projectPicture", src: info.projectPicture })))
+    .append($('<div></div>').attr({ class: "projectImage" }).append($('<img>').attr({ class: "projectPicture", src: info.projectPicture }).css("border-color", info.color)))
     .append($('<div></div>').attr({ class: "projectGithubLink projectText" }).text('View project on ')
       .append($('<a></a>').attr({ title: "GitHub", href: info.gitHubURL }).text(" GitHub").append($('<img>').attr({ class: "gitHubImage", src: "img/GitHub-Mark-Trans.png", alt: "GitHub logo" }))))
     .append($('<div></div>').attr({ class: "projectTitle" }).text(info.title))
-    .append($('<div></div>').attr({ class: "projectText projectBlurb" }).append($('<div></div>').text('Tap or click the image to play'))
+    .append($('<div></div>').attr({ class: "projectText" }).append($('<div></div>').attr({ class: "colorHighlight" }).css("background-color", info.color).text(`Tap/click image for ${info.videoOrDemo}`))
       .append($('<br>'))
       .append($('<div></div>').attr({ class: "projectTextItalic" }).text('Technologies: '))
       .append($('<div></div>').text(info.technologies))
