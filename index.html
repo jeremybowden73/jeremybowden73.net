@@ -55,36 +55,40 @@
     <div id="mobile-menu" class="hidden text-centred">
       <p id="linkTo1">Home</p>
       <p id="linkTo2">Projects</p>
-      <p id="linkTo3">Contact me</p>
-      <p id="linkTo4">More about me</p>
+      <p id="linkTo3">More about me</p>
+      <p id="linkTo4">Contact</p>
     </div>
     <div class="desktop-banner grid-menu">
       Hello desktop
     </div>
   </header>
-  <section id="section1" class="grid-home">
-    <a href="mailto:jeremy@jeremybowden.net" title="email: jeremy@jeremybowden.net" id="email">
-      <img src="img/email.png" alt="email icon">
-    </a>
-    <a href="https://twitter.com/TheJeremyBowden" title="Twitter" id="twitter">
-      <img src="img/Twitter_Logo_Blue.png" alt="Twitter logo">
-    </a>
-    <a href="https://github.com/jeremybowden73" title="GitHub" id="github">
-      <img src="img/GitHub-Mark-Trans.png" alt="GitHub logo">
-    </a>
-    <a href="" title="LinkedIn" id="linkedin">
-      <img src="img/email.png" alt="LinkedIn icon">
-    </a>
-    <div id="photo">
-      <img src="img/jeremy-small-square.png">
+  <section id="section1">
+    <div class="grid-socialMediaLogos">
+      <a href="mailto:jeremy@jeremybowden.net" title="email: jeremy@jeremybowden.net" id="email">
+        <img src="img/email.png" alt="email icon">
+      </a>
+      <a href="https://twitter.com/TheJeremyBowden" title="Twitter" id="twitter">
+        <img src="img/Twitter_Logo_Blue.png" alt="Twitter logo">
+      </a>
+      <a href="https://github.com/jeremybowden73" title="GitHub" id="github">
+        <img src="img/GitHub-Mark-Trans.png" alt="GitHub logo">
+      </a>
+      <a href="" title="LinkedIn" id="linkedin">
+        <img src="img/email.png" alt="LinkedIn icon">
+      </a>
     </div>
-    <div id="hello" class="text-header">Hello! I'm Jeremy</div>
-    <div id="blurb" class="text-centred">
-      <p>Self-taught Junior-level developer with experience in front-end and back-end technologies (JavaScript, Node.js,
-        CSS3, HTML5, Python), frameworks (Express, Flask) and other good stuff (C, APIs, Git).</p>
-    </div>
-    <div id="downArrow">
-      <img src="img/arrow.png">
+    <div class="grid-home">
+      <div id="photo">
+        <img src="img/jeremy-small-square.png">
+      </div>
+      <div id="hello" class="text-header">I'm Jeremy</div>
+      <div id="blurb" class="text-centred">
+        <p>Self-taught Junior-level developer with experience in front-end and back-end technologies (JavaScript, Node.js,
+          CSS3, HTML5, Python), frameworks (Express, Flask) and other good stuff (C, APIs, Git).</p>
+      </div>
+      <div id="downArrow">
+        <img src="img/arrow.png">
+      </div>
     </div>
   </section>
   <section id="section2">
@@ -93,11 +97,50 @@
     </div>
   </section>
   <section id="section3" class="grid-home">
-    <div id="heading" class="text-header">Contact me</div>
-  </section>
-  <section id="section4" class="grid-home">
     <div id="heading" class="text-header">A bit more about how I got here...</div>
   </section>
+  <section id="section4">
+    <div id="heading" class="text-header text-centred">Contact me</div>
+    <div class="grid-socialMediaLogos">
+      <a href="mailto:jeremy@jeremybowden.net" title="email: jeremy@jeremybowden.net" id="email">
+        <img src="img/email.png" alt="email icon">
+      </a>
+      <a href="https://twitter.com/TheJeremyBowden" title="Twitter" id="twitter">
+        <img src="img/Twitter_Logo_Blue.png" alt="Twitter logo">
+      </a>
+      <a href="https://github.com/jeremybowden73" title="GitHub" id="github">
+        <img src="img/GitHub-Mark-Trans.png" alt="GitHub logo">
+      </a>
+      <a href="" title="LinkedIn" id="linkedin">
+        <img src="img/email.png" alt="LinkedIn icon">
+      </a>
+    </div>
+
+    <form action="index.html" method="post">
+      <fieldset>
+        <label for="name">Name (max 30 characters):</label>
+        <input type="text" id="name" name="user_name">
+
+        <label for="mail">Email:</label>
+        <input type="email" id="mail" name="user_email">
+
+        <label for="purpose">Message purpose (please select one):</label>
+        <select id="purpose" name="user_purpose">
+          <option value="general">General</option>
+          <option value="i have a question">I have a question...</option>
+          <option value="i'm a recruiter">I'm a recruiter / hirer</option>
+          <option value="i'd like help">I'd like your help with...</option>
+          <option value="other">Other</option>
+        </select>
+        <input type="text" name="user_purpose_other" placeholder="If you selected 'Other', please enter message purpose here">
+
+        <label for="message">Message (max 500 characters):</label>
+        <textarea id="message" name="user_message" cols="30" rows="10" maxlength="500"></textarea>
+      </fieldset>
+      <button type="submit">SUBMIT</button>
+    </form>
+  </section>
+
 
 
 
@@ -109,6 +152,7 @@
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
   <script src="js/projects.js"></script>
+  <script src="js/contact.js"></script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>

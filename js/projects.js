@@ -5,7 +5,7 @@ const projectsInformation = [
     projectPicture: "img/tictactoe.png",
     videoOrDemo: "demo",
     linkType: "webpage",
-    link: "http://paxamrecords.com/",
+    link: "https://repl.it/@jeremybowden73/Anagram",
     gitHubURL: "https://github.com/jeremybowden73/Tic-Tac-Toe",
     title: "Tic Tac Toe",
     technologies: "tictac tech",
