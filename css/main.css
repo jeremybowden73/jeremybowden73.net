@@ -495,10 +495,16 @@ div {
     display: none;
     grid-row: 15 / 16;
     grid-column: 2 / 12;
-    color:white;
-    background-color: #222;
     border-radius: 5px;
-    padding: 10px 20px;
+    padding: 2vh 3vw;
+    background:#222;
+    color: white;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.modalView a:hover {
+    opacity: 1;
 }
 
 /* *************************************** */
