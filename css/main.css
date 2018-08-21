@@ -455,7 +455,7 @@ div {
   grid-template-rows: repeat(16, 5%) 1fr;
   background-color: white;
   grid-gap: 5px;
-  border: 1px solid #106d00;
+  border: 1px solid gray;
   justify-items: center;
   align-items: center;
   -webkit-align-items: center;
@@ -473,18 +473,31 @@ div {
   cursor: pointer;
 }
 
+.videoDiv {
+  display: none;
+  grid-row: 6 / 16;
+  grid-column: 3 / 11;
+  /* transform: rotate(90deg);   if you want to rotate the video div by 90 deg */
+}
+
 .embedded_youtube_iframe {
   width: 100%;
   height: 25%;
 }
 
-.videoDiv {
-  grid-row: 5 / 15;
-  grid-column: 3 / 11;
-  /* transform: rotate(90deg);   if you want to rotate the video div by 90 deg */
+.replText {
+    display: none;
+    grid-row: 4 / 5;
+    grid-column: 4 / 10;
 }
 
-/* ************************ */
+.modalView a {
+    display: none;
+    grid-row: 5 / 6;
+    grid-column: 4 / 10;
+}
+
+/* *************************************** */
 
 
 

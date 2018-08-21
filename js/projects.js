@@ -5,7 +5,7 @@ const projectsInformation = [
     projectPicture: "img/tictactoe.png",
     videoOrDemo: "demo",
     linkType: "webpage",
-    link: "https://repl.it/@jeremybowden73/Anagram",
+    link: "https://www.paxamrecords.com",
     gitHubURL: "https://github.com/jeremybowden73/Tic-Tac-Toe",
     title: "Tic Tac Toe",
     technologies: "tictac tech",
@@ -21,6 +21,17 @@ const projectsInformation = [
     title: "MashUp",
     technologies: "mashup tech",
     knowledge: "mashup knowledge"
+  },
+  {
+    color: "green",
+    projectPicture: "img/anagram.png",
+    videoOrDemo: "demo",
+    linkType: "repl",
+    link: "https://repl.it/@jeremybowden73/Anagram",
+    gitHubURL: "",
+    title: "Anagram",
+    technologies: "anag tech",
+    knowledge: "anag knowledge"
   }
 
 
@@ -31,7 +42,7 @@ const projectsInformation = [
 function createProject(info) {
   $('<div></div>').attr({ class: "project" })
     .append($('<div></div>').attr({ class: "projectImage" }).append($('<img>').attr({
-      class: `projectPicture ${info.linkType}`, id: info.link, src: info.projectPicture
+      class: `projectPicture ${info.linkType}`, id: info.link, src: info.projectPicture, alt: info.title
     }).css("border-color", info.color)))
     .append($('<div></div>').attr({ class: "projectGithubLink projectText" }).text('View project on ')
       .append($('<a></a>').attr({ title: "GitHub", href: info.gitHubURL }).text(" GitHub").append($('<img>').attr({ class: "gitHubImage", src: "img/GitHub-Mark-Trans.png", alt: "GitHub logo" }))))
@@ -76,11 +87,21 @@ function modalWindow() {
 
   videoDiv.appendChild(iframeDiv);
 
+  const replText = document.createElement("div");
+  replText.className = "replText";
+  replText.innerHTML = "Follow this link to www.repl.it to use ";
+
+  const replLink = document.createElement("a");
+  replLink.className = "replLink";
+  replLink.innerHTML = "and This is replLink";
+
   const closeButton = document.createElement("div");
   closeButton.className = "closeButton";
   closeButton.innerHTML = "&times;";
 
   modalView.appendChild(videoDiv);
+  modalView.appendChild(replText);
+  modalView.appendChild(replLink);
   modalView.appendChild(closeButton);
 
   // append the div to the main page div
@@ -89,7 +110,9 @@ function modalWindow() {
   // event handler for when the modal window 'close' button is clicked on
   closeButton.onclick = function (event) {
     modal.style.display = "none";
-    // divGridContainer.classList.remove("disabledDIV");
+    videoDiv.style.display = "none";
+    replText.style.display = "none";
+    replLink.style.display = "none";
 
     // stop the video from continuing to play in the hidden modal view
     // ref https://gist.github.com/cferdinandi/9044694
@@ -106,15 +129,25 @@ function modalWindow() {
 
 
 // event handler for when a Project image is clicked on
-// if the element clicked on has class="youtube", open the element's id value (a youtube URL) in the modal view, or
+// if the element clicked on has class="youtube", open the element's id value (a youtube URL) in the modal view with only the "video" divs displayed, or
+// if it has class="repl", open the id value in the modal view with only the "repl" divs displayed, or
 // if it has class="webpage", open the element's id value (a URL) in a new browser window
 const divGridContainer = document.querySelector(".gridContainer");
 divGridContainer.onclick = function (event) {
   if (event.target.classList.contains("youtube")) {
-    // get the iframe div
-    let iframeDiv = document.getElementsByTagName("iframe")[0];
-    // assign the url to the src attribute
-    iframeDiv.src = event.target.id;
+    // set the iframe div's src attribute to the correct youtube link
+    document.querySelector(".embedded_youtube_iframe").src = event.target.id;
+    // show the "video" div
+    document.querySelector(".videoDiv").style.display = "block";
+    // show the modal view
+    modal.style.display = "grid";
+  } else if (event.target.classList.contains("repl")) {
+    // set the replLink div value to the correct link
+    document.querySelector(".replLink").href = event.target.id;
+    document.querySelector(".replText").innerHTML = `External link to ${event.target.alt}`;
+    // show the "repl" divs
+    document.querySelector(".replLink").style.display = "block";
+    document.querySelector(".replText").style.display = "block";
     // show the modal view
     modal.style.display = "grid";
   } else if (event.target.classList.contains("webpage")) {
