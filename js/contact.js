@@ -11,17 +11,17 @@ const nameRegex = /[^a-z\s-]/i;
 const nameInput = document.getElementById("name");
 // create listener for input on the Name field
 nameInput.addEventListener("input", nameValueFunc, false);
-// function to check that the string is between 3 and 6 chars in length
+// function to check that the string is between 3 and 30 chars in length
 // and the characters in the Name value match the regex
 function nameValueFunc(event) {
   const nameValue = (event.target.value);
   if (nameValue.length < 3) {
     inputError(nameInput, 2);
   }
-  if (nameValue.length > 6) {
+  if (nameValue.length > 30) {
     inputError(nameInput, 3);
   }
-  if (nameValue.length >= 3 && nameValue.length <= 6) {
+  if (nameValue.length >= 3 && nameValue.length <= 30) {
     if (nameRegex.test(nameValue)) {
       inputError(nameInput, 0);
     } else {
@@ -48,7 +48,7 @@ function inputError(input, value) {
       errorLabel.textContent = "Please enter a minimum of 3 characters:";
       break;
     case 3:
-      errorLabel.textContent = "Please enter a maximum of 6 characters:";
+      errorLabel.textContent = "Please enter a maximum of 30 characters:";
       break;
     default:
       break;
@@ -113,11 +113,11 @@ formInput.addEventListener("submit", e => {
     inputError(username, 2);
     alertSubmitError();
   }
-  if (username.value.length > 6) {
+  if (username.value.length > 30) {
     inputError(username, 3);
     alertSubmitError();
   }
-  if (username.value.length >= 3 && username.value.length <= 6) {
+  if (username.value.length >= 3 && username.value.length <= 30) {
     if (nameRegex.test(username.value)) {
       inputError(username, 0);
       alertSubmitError();
