@@ -97,8 +97,7 @@ purpose.addEventListener("change", e => {
 
 
 
-//
-// "FORM VALIDATION" SECTION
+// validate contact form
 // disable HTML5 form validation
 const formInput = document.querySelector("form");
 formInput.setAttribute("novalidate", true);

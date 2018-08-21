@@ -112,7 +112,7 @@ body {
 }
 
 a:visited {
-    color: gray;
+    color: #222;
 }
 
 a:hover {
@@ -462,8 +462,8 @@ div {
 }
 
 .closeButton {
-  grid-row: 2 / 4;
-  grid-column: 3 / 5;
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
   font-size: 5rem;
   transition: transform 0.5s;
 }
@@ -487,14 +487,18 @@ div {
 
 .replText {
     display: none;
-    grid-row: 4 / 5;
-    grid-column: 4 / 10;
+    grid-row: 5 / 13;
+    grid-column: 3 / 11;
 }
 
 .modalView a {
     display: none;
-    grid-row: 5 / 6;
-    grid-column: 4 / 10;
+    grid-row: 15 / 16;
+    grid-column: 2 / 12;
+    color:white;
+    background-color: #222;
+    border-radius: 5px;
+    padding: 10px 20px;
 }
 
 /* *************************************** */
