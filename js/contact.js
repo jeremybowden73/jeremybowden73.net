@@ -30,6 +30,94 @@ function nameValueFunc(event) {
   }
 }
 
+
+//
+// "PURPOSE" SECTION
+// hide the "other purpose" field upon page load with JS enabled
+const otherPurposeForm = document
+  .getElementsByTagName("fieldset")[0]
+  .querySelectorAll("input")[2];
+otherPurposeForm.classList.add("hidden");
+//
+// reveal text field 'Other purpose' when "Other" option is selected
+let purpose = document.getElementById("purpose");
+purpose.addEventListener("change", e => {
+  let purposeSelected = e.target.value;
+  if (purposeSelected === "other") {
+    otherPurposeForm.classList.remove("hidden"); // unhide the 'Other purpose' text field
+    otherPurposeForm.id = "other-title"; // add an id attribute to the text field
+    otherPurposeForm.placeholder = "Purpose for contacting"; // replace default placeholder with new text
+  } else {
+    otherPurposeForm.classList.add("hidden"); // hide the 'Other purpose' text field if "Other" wasn't selected
+  }
+});
+
+// validate form when user hits the submit button
+validateForm();
+
+
+
+
+// function to validate contact form
+function validateForm() {
+  const formInput = document.querySelector("form");
+  // disable HTML5 form validation
+  formInput.setAttribute("novalidate", true);
+  // create event listener for the form's Submit button
+  formInput.addEventListener("submit", e => {
+    // create consts for form fields to be validated
+    const username = document.getElementById("name");
+    const email = document.getElementById("mail");
+    let submitScore = 0;
+
+    // validate username field has been entered correctly
+    if (username.value.length < 3) {
+      inputError(username, 2);
+    }
+    if (username.value.length > 30) {
+      inputError(username, 3);
+    }
+    if (username.value.length >= 3 && username.value.length <= 30) {
+      if (nameRegex.test(username.value)) {
+        inputError(username, 0);
+      } else {
+        inputGood(username, 0);
+        submitScore += 1;
+      }
+    }
+
+    // validate email field has been entered correctly
+    // Regex sourced from https://www.regular-expressions.info/email.html
+    const regexEmail = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
+    if (regexEmail.test(email.value)) {
+      inputGood(email, 1);
+      submitScore += 1;
+    } else {
+      inputError(email, 1);
+    }
+
+    if (submitScore === 2) {
+      alertSubmitOK();
+    } else {
+      alertSubmitError();
+    }
+
+    function alertSubmitError() {
+      e.preventDefault(); // prevent page refresh on submission
+      console.log("form submit failed");
+      submitAction("fail");
+    };
+
+    function alertSubmitOK() {
+      e.preventDefault(); // prevent page refresh on submission
+      console.log("form submit success");
+      submitAction("success");
+    };
+
+  });
+};
+
+
 // function to change the styling of text inputs (the label and input elements) if erroneous data has been entered
 function inputError(input, value) {
   input.style.border = "2px dotted red";
@@ -53,7 +141,7 @@ function inputError(input, value) {
     default:
       break;
   }
-}
+};
 
 // function to set the styling of the text inputs (label and input elements) to the default style if the entered data is valid (in case the elements were previously changed due to erroneous input)
 function inputGood(input, value) {
@@ -71,84 +159,33 @@ function inputGood(input, value) {
     default:
       break;
   }
-}
+};
 
-//
-// "PURPOSE" SECTION
-// hide the "other purpose" field upon page load with JS enabled
-const otherPurposeForm = document
-  .getElementsByTagName("fieldset")[0]
-  .querySelectorAll("input")[2];
-otherPurposeForm.classList.add("hidden");
-//
-// reveal text field 'Other purpose' when "Other" option is selected
-let purpose = document.getElementById("purpose");
-purpose.addEventListener("change", e => {
-  let purposeSelected = e.target.value;
-  if (purposeSelected === "other") {
-    otherPurposeForm.classList.remove("hidden"); // unhide the 'Other purpose' text field
-    otherPurposeForm.id = "other-title"; // add an id attribute to the text field
-    otherPurposeForm.placeholder = "Purpose for contacting"; // replace default placeholder with new text
+
+
+// function to add a div to the <form> displaying success or failure when submitted
+function submitAction(action) {
+  const submitDiv = document.querySelector("#submitDiv");
+  const formSubmitButton = document.querySelector("button");
+
+  const existingActionSpan = document.querySelector(".submittedMessage");
+  if (existingActionSpan) {
+    submitDiv.removeChild(existingActionSpan);
+  }
+
+  const newActionSpan = document.createElement("span");
+  newActionSpan.classList.add("submittedMessage");
+
+  submitDiv.appendChild(newActionSpan);
+  if (action == "fail") {
+    newActionSpan.innerHTML = "Failed to submit form. Please check form fields.";
+    newActionSpan.style.color = "red";
+    formSubmitButton.innerHTML = "Re-Submit";
+    formSubmitButton.style.background = "red";
   } else {
-    otherPurposeForm.classList.add("hidden"); // hide the 'Other purpose' text field if "Other" wasn't selected
+    newActionSpan.innerHTML = "Form submitted. Thanks.";
+    newActionSpan.style.color = "green";
+    formSubmitButton.innerHTML = "DONE"
+    formSubmitButton.style.background = "green";
   }
-});
-
-
-
-
-// validate contact form
-// disable HTML5 form validation
-const formInput = document.querySelector("form");
-formInput.setAttribute("novalidate", true);
-// create event listener for the form's Submit button
-formInput.addEventListener("submit", e => {
-  // create consts for form fields to be validated
-  const username = document.getElementById("name");
-  const email = document.getElementById("mail");
-  let submitScore = 0;
-
-  // validate username field has been entered correctly
-  if (username.value.length < 3) {
-    inputError(username, 2);
-    alertSubmitError();
-  }
-  if (username.value.length > 30) {
-    inputError(username, 3);
-    alertSubmitError();
-  }
-  if (username.value.length >= 3 && username.value.length <= 30) {
-    if (nameRegex.test(username.value)) {
-      inputError(username, 0);
-      alertSubmitError();
-    } else {
-      inputGood(username, 0);
-      submitScore += 1;
-    }
-  }
-
-  // validate email field has been entered correctly
-  // Regex sourced from https://www.regular-expressions.info/email.html
-  const regexEmail = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
-  if (regexEmail.test(email.value)) {
-    inputGood(email, 1);
-    submitScore += 1;
-  } else {
-    inputError(email, 1);
-    alertSubmitError();
-  }
-
-  if (submitScore === 2) {
-    alertSubmitOK();
-  }
-
-  function alertSubmitError() {
-    e.preventDefault(); // prevent page refresh on submission
-    alert("Whoops! Please correct the errors on the form. Thanks");
-  };
-
-  function alertSubmitOK() {
-    alert("FORM SUBMITTED, THANKS!!!");
-  };
-
-});
+};
