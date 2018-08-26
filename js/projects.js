@@ -1,7 +1,7 @@
 // data for each of the projects in the Projects section
 const projectsInformation = [
   {
-    color: "gray",
+    color: "green",
     projectPicture: "img/projects/web-scraper.png",
     videoOrDemo: "demo",
     linkType: "webpage",
@@ -9,51 +9,63 @@ const projectsInformation = [
     gitHubURL: "https://github.com/jeremybowden73/Webpage-content-scraper-using-Express",
     title: "Web Scraper",
     technologies: "Node, Express, Pug, Heroku, CSS, JavaScript",
-    knowledge: "Building a command-line app, adding a front-end and deploying to Heroku"
+    knowledge: "Building a command-line app; adding a front-end and deploying to a server"
   },
   {
-    color: "gray",
-    projectPicture: "img/projects/finance.png",
-    videoOrDemo: "demo",
-    linkType: "webpage",
-    link: "https://www.paxamrecords.com",
-    gitHubURL: "https://github.com/jeremybowden73/Tic-Tac-Toe",
-    title: "Tic Tac Toe",
-    technologies: "tictac tech",
-    knowledge: "tictac knowledge"
-  },
-  {
-    color: "red",
-    projectPicture: "img/projects/employee-directory.png",
+    color: "MediumBlue",
+    projectPicture: "img/projects/twitter-client.png",
     videoOrDemo: "video",
     linkType: "youtube",
-    link: "https://www.youtube.com/embed/1vFmrmOY7qM",
-    gitHubURL: "",
-    title: "MashUp",
-    technologies: "mashup tech",
-    knowledge: "mashup knowledge"
+    link: "https://www.youtube.com/embed/O2JwmuVB8R0",
+    gitHubURL: "https://github.com/jeremybowden73/Twitter-client",
+    title: "Twitter Client",
+    technologies: "REST API, Express, Node, JavaScript Promises, Pug",
+    knowledge: "Retrieving data from a REST API. Templating HTML in Node. Route-handling HTTP requests."
   },
   {
-    color: "green",
+    color: "BlueViolet",
     projectPicture: "img/projects/anagram.png",
     videoOrDemo: "demo",
     linkType: "repl",
     link: "https://repl.it/@jeremybowden73/Anagram",
     gitHubURL: "",
-    title: "Anagram",
-    technologies: "anag tech",
-    knowledge: "anag knowledge"
+    title: "Anagram Maker",
+    technologies: "C",
+    knowledge: "Low-level memory management, functional programming, Linked lists."
   },
   {
-    color: "green",
-    projectPicture: "img/projects/pong3.png",
+    color: "MediumSpringGreen",
+    projectPicture: "img/projects/employee-directory.png",
     videoOrDemo: "demo",
-    linkType: "repl",
-    link: "https://repl.it/@jeremybowden73/Anagram",
+    linkType: "webpage",
+    link: "",
+    gitHubURL: "https://github.com/jeremybowden73/Employee-directory",
+    title: "Contact Directory",
+    technologies: "JavaScript, APIs, Fetch, CSS.",
+    knowledge: "Using JavaScript's Fetch API and 3rd-party APIs. CSS Grid layout. DOM manipulation with JS."
+  },
+  {
+    color: "indigo",
+    projectPicture: "img/projects/finance.png",
+    videoOrDemo: "video",
+    linkType: "youtube",
+    link: "https://www.youtube.com/embed/sUZCVQY__Gc",
     gitHubURL: "",
-    title: "Anagram",
-    technologies: "anag tech",
-    knowledge: "anag knowledge"
+    title: "Share Trading Site",
+    technologies: "Python, Flask, SQL, HTML",
+    knowledge: "Creating routes in a back-end framework. Managing data in SQL database."
+  },
+
+  {
+    color: "green",
+    projectPicture: "img/projects/tictactoe.png",
+    videoOrDemo: "demo",
+    linkType: "webpage",
+    link: "",
+    gitHubURL: "https://github.com/jeremybowden73/Tic-Tac-Toe",
+    title: "Tic Tac Toe",
+    technologies: "JavaScript, CSS.",
+    knowledge: "DOM manipulation and Event-handling with JS."
   }
 
 
