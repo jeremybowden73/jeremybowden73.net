@@ -2,7 +2,7 @@
 const projectsInformation = [
   {
     color: "gray",
-    projectPicture: "img/tictactoe.png",
+    projectPicture: "img/projects/finance.png",
     videoOrDemo: "demo",
     linkType: "webpage",
     link: "https://www.paxamrecords.com",
@@ -13,7 +13,7 @@ const projectsInformation = [
   },
   {
     color: "red",
-    projectPicture: "img/employee-directory.png",
+    projectPicture: "img/projects/employee-directory.png",
     videoOrDemo: "video",
     linkType: "youtube",
     link: "https://www.youtube.com/embed/1vFmrmOY7qM",
@@ -24,7 +24,18 @@ const projectsInformation = [
   },
   {
     color: "green",
-    projectPicture: "img/anagram.png",
+    projectPicture: "img/projects/anagram.png",
+    videoOrDemo: "demo",
+    linkType: "repl",
+    link: "https://repl.it/@jeremybowden73/Anagram",
+    gitHubURL: "",
+    title: "Anagram",
+    technologies: "anag tech",
+    knowledge: "anag knowledge"
+  },
+  {
+    color: "green",
+    projectPicture: "img/projects/pong3.png",
     videoOrDemo: "demo",
     linkType: "repl",
     link: "https://repl.it/@jeremybowden73/Anagram",
@@ -44,7 +55,7 @@ function createProject(info) {
     .append($('<div></div>').attr({ class: "projectImage" }).append($('<img>').attr({
       class: `projectPicture ${info.linkType}`, id: info.link, src: info.projectPicture, alt: info.title
     }).css("border-color", info.color)))
-    .append($('<div></div>').attr({ class: "projectGithubLink projectText" }).text('View project on ')
+    .append($('<div></div>').attr({ class: "projectGithubLink projectText" }).text('See project on ')
       .append($('<a></a>').attr({ title: "GitHub", href: info.gitHubURL }).text(" GitHub").append($('<img>').attr({ class: "gitHubImage", src: "img/GitHub-Mark-Trans.png", alt: "GitHub logo" }))))
     .append($('<div></div>').attr({ class: "projectTitle" }).text(info.title))
     .append($('<div></div>').attr({ class: "projectText" }).append($('<div></div>').attr({ class: "colorHighlight" }).css("background-color", info.color).text(`Tap/click image for ${info.videoOrDemo}`))
