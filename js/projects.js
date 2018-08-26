@@ -2,6 +2,17 @@
 const projectsInformation = [
   {
     color: "gray",
+    projectPicture: "img/projects/web-scraper.png",
+    videoOrDemo: "demo",
+    linkType: "webpage",
+    link: "https://jeremy-bowden-web-scraper.herokuapp.com/",
+    gitHubURL: "https://github.com/jeremybowden73/Webpage-content-scraper-using-Express",
+    title: "Web Scraper",
+    technologies: "Node, Express, Pug, Heroku, CSS, JavaScript",
+    knowledge: "Building a command-line app, adding a front-end and deploying to Heroku"
+  },
+  {
+    color: "gray",
     projectPicture: "img/projects/finance.png",
     videoOrDemo: "demo",
     linkType: "webpage",
