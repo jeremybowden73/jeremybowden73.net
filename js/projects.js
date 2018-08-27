@@ -20,7 +20,7 @@ const projectsInformation = [
     gitHubURL: "https://github.com/jeremybowden73/Twitter-client",
     title: "Twitter Client",
     technologies: "REST API, Express, Node, JavaScript Promises, Pug",
-    knowledge: "Retrieving data from a REST API. Templating HTML in Node. Route-handling HTTP requests."
+    knowledge: "Getting data from a REST API. Templating HTML. HTTP route-handling."
   },
   {
     color: "BlueViolet",
@@ -55,7 +55,6 @@ const projectsInformation = [
     technologies: "Python, Flask, SQL, HTML",
     knowledge: "Creating routes in a back-end framework. Managing data in SQL database."
   },
-
   {
     color: "green",
     projectPicture: "img/projects/tictactoe.png",
@@ -65,10 +64,107 @@ const projectsInformation = [
     gitHubURL: "https://github.com/jeremybowden73/Tic-Tac-Toe",
     title: "Tic Tac Toe",
     technologies: "JavaScript, CSS.",
-    knowledge: "DOM manipulation and Event-handling with JS."
+    knowledge: "DOM manipulation and Event-handling with JavaScript."
+  },
+  {
+    color: "MediumBlue",
+    projectPicture: "img/projects/website-v1.png",
+    videoOrDemo: "demo",
+    linkType: "webpage",
+    link: "",
+    gitHubURL: "https://github.com/jeremybowden73/jeremybowden73.github.io",
+    title: "Portfolio Webpage v1",
+    technologies: "HTML, CSS, Git",
+    knowledge: "Building a website from scratch. Deploying via GitHub."
+  },
+  {
+    color: "DarkGoldenrod",
+    projectPicture: "img/projects/form-validation.png",
+    videoOrDemo: "demo",
+    linkType: "webpage",
+    link: "",
+    gitHubURL: "https://github.com/jeremybowden73/Interactive-form-with-validation",
+    title: "Form with Validation",
+    technologies: "JavaScript, CSS, HTML",
+    knowledge: "Input validation on 'Submit' and in real-time."
+  },
+  {
+    color: "Crimson",
+    projectPicture: "img/projects/initials.png",
+    videoOrDemo: "demo",
+    linkType: "repl",
+    link: "https://repl.it/@jeremybowden73/Initials",
+    gitHubURL: "https://github.com/jeremybowden73/Initials",
+    title: "Initials",
+    technologies: "C",
+    knowledge: "Conditionals, For loops."
+  },
+  {
+    color: "Navy",
+    projectPicture: "img/projects/pagination-content-filter.png",
+    videoOrDemo: "demo",
+    linkType: "webpage",
+    link: "",
+    gitHubURL: "https://github.com/jeremybowden73/Webpage-Pagination-and-Content-filter",
+    title: "Webpage Pagination",
+    technologies: "JavaScript",
+    knowledge: "Event-handling and DOM manipulation."
+  },
+  {
+    color: "DarkGoldenrod",
+    projectPicture: "img/projects/mashup.png",
+    videoOrDemo: "video",
+    linkType: "youtube",
+    link: "https://www.youtube.com/embed/1vFmrmOY7qM",
+    gitHubURL: "",
+    title: "MashUp",
+    technologies: "Python, Flask, JavaScript, APIs, SQL, jQuery",
+    knowledge: "Creating routes using a framework. Using Google APIs. Database programming."
+  },
+  {
+    color: "green",
+    projectPicture: "img/projects/fifteen.png",
+    videoOrDemo: "demo",
+    linkType: "repl",
+    link: "https://repl.it/@jeremybowden73/Game-of-Fifteen",
+    gitHubURL: "https://github.com/jeremybowden73/Game-of-Fifteen",
+    title: "Game Of Fifteen",
+    technologies: "C",
+    knowledge: "Low-level functionasl programming: file access, loops, conditionals."
+  },
+  {
+    color: "DimGray",
+    projectPicture: "img/projects/random-quote-generator.png",
+    videoOrDemo: "demo",
+    linkType: "webpage",
+    link: "",
+    gitHubURL: "https://github.com/jeremybowden73/Random-quote-generator",
+    title: "Random Quotes",
+    technologies: "JavaScript, CSS",
+    knowledge: "Injecting HTML with JavaScript, Functions, Objects."
+  },
+  {
+    color: "Indigo",
+    projectPicture: "img/projects/pong.png",
+    videoOrDemo: "demo",
+    linkType: "webpage",
+    link: "https://scratch.mit.edu/projects/155627081/",
+    gitHubURL: "https://github.com/jeremybowden73/Pong",
+    title: "Pong",
+    technologies: "Scratch",
+    knowledge: "Loops, Conditionals, Events, Operators."
+  },
+  {
+    color: "Crimson",
+    projectPicture: "img/projects/tweets.png",
+    videoOrDemo: "video",
+    linkType: "youtubr",
+    link: "https://www.youtube.com/embed/OMdkbplX7Aw",
+    gitHubURL: "https://github.com/jeremybowden73/Twitter-user-sentiments",
+    title: "Tweets Analyzer",
+    technologies: "Python, APIs.",
+    knowledge: "Getting data from Twitter's API; processing it in Python."
   }
-
-
 ]
 
 

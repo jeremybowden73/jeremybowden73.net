@@ -374,7 +374,7 @@ div {
     display: grid;
     grid-gap: 1px;
     grid-template-columns: 10px repeat(5, 25px) 10px repeat(5, 28px) 1fr;
-    grid-template-rows: 1px 35px repeat(7, 1fr) 5px;
+    grid-template-rows: 1px 32px repeat(7, 1fr) 5px;
     background-color:white;
 }
 
