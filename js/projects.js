@@ -8,8 +8,8 @@ const projectsInformation = [
     link: "https://jeremy-bowden-web-scraper.herokuapp.com/",
     gitHubURL: "https://github.com/jeremybowden73/Webpage-content-scraper-using-Express",
     title: "Web Scraper",
-    technologies: "Node, Express, Pug, Heroku, CSS, JavaScript",
-    knowledge: "Building a command-line app; adding a front-end and deploying to a server"
+    technologies: "Node, Express, Pug, Heroku, CSS, JavaScript.",
+    knowledge: "Building a command-line app; adding a front-end and deploying to a server."
   },
   {
     color: "MediumBlue",
@@ -19,7 +19,7 @@ const projectsInformation = [
     link: "https://www.youtube.com/embed/O2JwmuVB8R0",
     gitHubURL: "https://github.com/jeremybowden73/Twitter-client",
     title: "Twitter Client",
-    technologies: "REST API, Express, Node, JavaScript Promises, Pug",
+    technologies: "REST API, Express, Node, JavaScript Promises, Pug.",
     knowledge: "Getting data from a REST API. Templating HTML. HTTP route-handling."
   },
   {
@@ -30,7 +30,7 @@ const projectsInformation = [
     link: "https://repl.it/@jeremybowden73/Anagram",
     gitHubURL: "",
     title: "Anagram Maker",
-    technologies: "C",
+    technologies: "C.",
     knowledge: "Low-level memory management, functional programming, Linked lists."
   },
   {
@@ -52,7 +52,7 @@ const projectsInformation = [
     link: "https://www.youtube.com/embed/sUZCVQY__Gc",
     gitHubURL: "",
     title: "Share Trading Site",
-    technologies: "Python, Flask, SQL, HTML",
+    technologies: "Python, Flask, SQL, HTML.",
     knowledge: "Creating routes in a back-end framework. Managing data in SQL database."
   },
   {
@@ -74,7 +74,7 @@ const projectsInformation = [
     link: "",
     gitHubURL: "https://github.com/jeremybowden73/jeremybowden73.github.io",
     title: "Portfolio Webpage v1",
-    technologies: "HTML, CSS, Git",
+    technologies: "HTML, CSS, Git.",
     knowledge: "Building a website from scratch. Deploying via GitHub."
   },
   {
@@ -85,8 +85,8 @@ const projectsInformation = [
     link: "",
     gitHubURL: "https://github.com/jeremybowden73/Interactive-form-with-validation",
     title: "Form with Validation",
-    technologies: "JavaScript, CSS, HTML",
-    knowledge: "Input validation on 'Submit' and in real-time."
+    technologies: "JavaScript, CSS, HTML.",
+    knowledge: "Validating user input on 'Submit' and in real-time."
   },
   {
     color: "Crimson",
@@ -96,7 +96,7 @@ const projectsInformation = [
     link: "https://repl.it/@jeremybowden73/Initials",
     gitHubURL: "https://github.com/jeremybowden73/Initials",
     title: "Initials",
-    technologies: "C",
+    technologies: "C.",
     knowledge: "Conditionals, For loops."
   },
   {
@@ -107,7 +107,7 @@ const projectsInformation = [
     link: "",
     gitHubURL: "https://github.com/jeremybowden73/Webpage-Pagination-and-Content-filter",
     title: "Webpage Pagination",
-    technologies: "JavaScript",
+    technologies: "JavaScript.",
     knowledge: "Event-handling and DOM manipulation."
   },
   {
@@ -118,8 +118,8 @@ const projectsInformation = [
     link: "https://www.youtube.com/embed/1vFmrmOY7qM",
     gitHubURL: "",
     title: "MashUp",
-    technologies: "Python, Flask, JavaScript, APIs, SQL, jQuery",
-    knowledge: "Creating routes using a framework. Using Google APIs. Database programming."
+    technologies: "Python, Flask, JavaScript, APIs, SQL, jQuery.",
+    knowledge: "Creating routes with frameworks. Google APIs. Database programming."
   },
   {
     color: "green",
@@ -129,7 +129,7 @@ const projectsInformation = [
     link: "https://repl.it/@jeremybowden73/Game-of-Fifteen",
     gitHubURL: "https://github.com/jeremybowden73/Game-of-Fifteen",
     title: "Game Of Fifteen",
-    technologies: "C",
+    technologies: "C.",
     knowledge: "Low-level functionasl programming: file access, loops, conditionals."
   },
   {
@@ -140,7 +140,7 @@ const projectsInformation = [
     link: "",
     gitHubURL: "https://github.com/jeremybowden73/Random-quote-generator",
     title: "Random Quotes",
-    technologies: "JavaScript, CSS",
+    technologies: "JavaScript, CSS.",
     knowledge: "Injecting HTML with JavaScript, Functions, Objects."
   },
   {
@@ -151,14 +151,14 @@ const projectsInformation = [
     link: "https://scratch.mit.edu/projects/155627081/",
     gitHubURL: "https://github.com/jeremybowden73/Pong",
     title: "Pong",
-    technologies: "Scratch",
+    technologies: "Scratch.",
     knowledge: "Loops, Conditionals, Events, Operators."
   },
   {
     color: "Crimson",
     projectPicture: "img/projects/tweets.png",
     videoOrDemo: "video",
-    linkType: "youtubr",
+    linkType: "youtube",
     link: "https://www.youtube.com/embed/OMdkbplX7Aw",
     gitHubURL: "https://github.com/jeremybowden73/Twitter-user-sentiments",
     title: "Tweets Analyzer",
@@ -174,7 +174,7 @@ function createProject(info) {
     .append($('<div></div>').attr({ class: "projectImage" }).append($('<img>').attr({
       class: `projectPicture ${info.linkType}`, id: info.link, src: info.projectPicture, alt: info.title
     }).css("border-color", info.color)))
-    .append($('<div></div>').attr({ class: "projectGithubLink projectText" }).text('See project on ')
+    .append($('<div></div>').attr({ class: "projectGithubLink projectText" }).text('View on ')
       .append($('<a></a>').attr({ title: "GitHub", href: info.gitHubURL }).text(" GitHub").append($('<img>').attr({ class: "gitHubImage", src: "img/GitHub-Mark-Trans.png", alt: "GitHub logo" }))))
     .append($('<div></div>').attr({ class: "projectTitle" }).text(info.title))
     .append($('<div></div>').attr({ class: "projectText" }).append($('<div></div>').attr({ class: "colorHighlight" }).css("background-color", info.color).text(`Tap/click image for ${info.videoOrDemo}`))

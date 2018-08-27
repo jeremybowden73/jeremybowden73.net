@@ -1,3 +1,10 @@
+// scroll to the top of the page when loaded
+$(document).ready(function () {
+  $('html, body').animate({
+    scrollTop: $("#section1").offset().top - 80
+  }, 500);
+});
+
 // event handler for the menu icon (only narrow screens will see this)
 $("#mobile-menu-burger").click(function () {
   if ($(this).hasClass("open")) {
