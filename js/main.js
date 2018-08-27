@@ -24,25 +24,25 @@ $("#mobile-menu").click(function () {
 
 // to do ... apply DRY to these 4 event handlers
 // which scroll to the appropriate section when clicked on via the menu
-$("#linkTo1").click(function () {
+$(".linkTo1").click(function () {
   $('html, body').animate({
     scrollTop: $("#section1").offset().top - 80
   }, 1000);
 });
 
-$("#linkTo2").click(function () {
+$(".linkTo2").click(function () {
   $('html, body').animate({
     scrollTop: $("#section2").offset().top - 80
   }, 1000);
 });
 
-$("#linkTo3").click(function () {
+$(".linkTo3").click(function () {
   $('html, body').animate({
     scrollTop: $("#section3").offset().top - 80
   }, 1000);
 });
 
-$("#linkTo4").click(function () {
+$(".linkTo4").click(function () {
   $('html, body').animate({
     scrollTop: $("#section4").offset().top - 80
   }, 1000);
