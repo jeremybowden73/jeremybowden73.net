@@ -139,13 +139,17 @@ div {
     border: 1px solid yellow;
 } */
 
+.heading {
+    padding-bottom: 25px;
+}
+
 .text-centred {
     text-align: center;
 }
 
 .text-header {
     font-family: 'Oswald', sans-serif;
-    font-size: 2rem;
+    font-size: 2.2rem;
     letter-spacing: 1px;
 }
 
@@ -244,7 +248,7 @@ div {
 
 #mobile-menu {
     position: fixed;
-    top: 10vh;
+    top: 80px;
     width: 100%;
     background-color: lightblue;
     z-index: 2;
@@ -266,8 +270,7 @@ div {
 
 .grid-socialMediaLogos {
     display: grid;
-    grid-gap: 3px;
-    grid-template-columns: 1fr repeat(12, 6%) 1fr;
+    grid-template-columns: 1fr repeat(12, 7%) 1fr;
     grid-template-rows: 10vh;
     align-items: center;
     justify-items: center;
@@ -355,10 +358,8 @@ div {
     padding: 20px;
 }
 
-#section2 #heading {
-    padding-bottom: 25px;
+#section2 .heading {
     color: white;
-    
 }
 
 #section2 .gridContainer {
@@ -516,13 +517,13 @@ div {
 /* SECTION 3 (MORE ABOUT ME PAGE) */
 
 #section3 {
-    height: 90vh;
-    background-color: rgb(178, 235, 195); 
+    /* height: 90vh; */
+    background-color: rgb(178, 235, 195);
+    padding: 20px;
 }
 
-#section3 #heading {
-    grid-column: 1 / 15;
-    grid-row: 6 / 7;
+#section3 .heading {
+    color: purple;
 }
 
 
@@ -538,10 +539,8 @@ div {
     padding: 20px;
 }
 
-#section4 #heading {
-    padding-bottom: 25px;
+#section4 .heading {
     color: red;
-    
 }
 
 form {
