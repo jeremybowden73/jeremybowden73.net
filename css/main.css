@@ -372,7 +372,7 @@ div {
 #section2 .project {
     display: grid;
     grid-gap: 1px;
-    grid-template-columns: 20px repeat(5, 25px) 1fr repeat(5, 28px) 20px;
+    grid-template-columns: 10px repeat(5, 25px) 1fr repeat(5, 28px) 10px;
     grid-template-rows: 3px 32px repeat(7, 1fr) 3px;
     background-color:white;
 }

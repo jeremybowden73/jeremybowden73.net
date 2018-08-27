@@ -73,7 +73,7 @@ const projectsInformation = [
     linkType: "webpage",
     link: "",
     gitHubURL: "https://github.com/jeremybowden73/jeremybowden73.github.io",
-    title: "Portfolio Webpage v1",
+    title: "Portfolio Website v1",
     technologies: "HTML, CSS, Git.",
     knowledge: "Building a website from scratch. Deploying via GitHub."
   },
