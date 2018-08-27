@@ -1,8 +1,3 @@
-// SET FOCUS ON THE FIRST TEXT FIELD
-// on page load, set focus on the first text field
-const initialFocus = document.getElementById("name");
-initialFocus.focus();
-
 // real-time validation for the Name field
 //
 // create regex for allowable characters
