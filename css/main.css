@@ -592,7 +592,13 @@ fieldset {
     opacity: 1;
 }
 
-
+#section5 div {
+    padding: 25px 10vw;
+    color: #222;
+    font-size: 0.75rem;
+    text-align: center;
+    background-color: beige;
+}
 
 
 
