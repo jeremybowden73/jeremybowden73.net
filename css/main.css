@@ -532,7 +532,7 @@ div {
 .replText {
     display: none;
     grid-row: 5 / 13;
-    grid-column: 3 / 11;
+    grid-column: 2 / 12;
 }
 
 .modalView a {
@@ -541,7 +541,7 @@ div {
     grid-column: 2 / 12;
     border-radius: 5px;
     padding: 2vh 3vw;
-    background:#222;
+    background: indigo;
     color: white;
     cursor: pointer;
     opacity: 0.8;

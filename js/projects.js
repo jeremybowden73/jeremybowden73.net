@@ -271,7 +271,7 @@ divGridContainer.onclick = function (event) {
   } else if (event.target.classList.contains("repl")) {
     // set the replLink div value to the correct link
     document.querySelector(".replLink").href = event.target.id;
-    document.querySelector(".replText").innerHTML = `Please follow the link below to use ${event.target.alt}, then:<br><br>1. Click the green 'run' button to start:<br><br><img src="img/repl-help.png" alt="repl green button" height="120" width="160"><br>2. Follow the usage notes in the command-line pane (the right or lower pane, depending on your browser configuration).`;
+    document.querySelector(".replText").innerHTML = `Please follow the link below to use ${event.target.alt}, then:<br>1. Click the green 'run' button to start:<br><img src="img/repl-help.png" alt="repl green button" height="120" width="160"><br>2. Follow the usage notes in the command-line pane (the right or lower pane, depending on your browser configuration).`;
     // show the "repl" divs
     document.querySelector(".replLink").style.display = "block";
     document.querySelector(".replText").style.display = "block";
