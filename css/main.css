@@ -357,9 +357,7 @@ div {
     border-radius: 50%;
 }
 
-#section1 #photo img {
-    width: 100%;
-}
+
 
 #section1 #hello {
     grid-column: 3 / 13;
@@ -597,7 +595,7 @@ fieldset {
  }
 
  input {
-     width: 80%;
+     width: 96%;
      outline: none;
      border: 1px solid #222;
      border-radius: 5px;
@@ -617,7 +615,7 @@ fieldset {
 
 #section4 button {
     margin: 3vh 0;
-    width: 40%;
+    width: 100%;
     padding: 2vh 3vw;
     background:#222;
     color: white;
@@ -774,13 +772,38 @@ fieldset {
     }
 }
 
-@media only screen and (min-width: 1025px) {
+/* For tablets in landscape orientation */
+/* @media only screen and (orientation:landscape) and (min-width: 720px) {
+    #section1 img, #section4 img {
+        width: 60%;
+    }
+    
+    #section1 #photo img {
+        width: 80%;
+    }
+} */
+
+
+/* For laptops and desktop screens */
+@media only screen and (min-width: 1020px) {
     .mobile-banner {
         display: none;
     }
 
     .desktop-banner {
         display: grid;
+    }
+
+    #section1 img, #section4 img {
+        width: 36%;
+    }
+
+    #section1 #hello {
+        grid-row: 7 / 8;
+    }
+
+    .grid-home {
+        grid-template-rows: 5vh repeat(12, 5vh) 1fr;
     }
 }
 
