@@ -49,7 +49,7 @@ $(".linkTo4").click(function () {
 });
 
 
-// event handler for down arrows
+// event handler for the down arrow
 $("#downArrow").click(function () {
   $('html, body').animate({
     scrollTop: $("#section2").offset().top - 80

@@ -209,10 +209,7 @@ function modalWindow() {
   videoDiv.className = "videoDiv";
   const iframeDiv = document.createElement("iframe");
   iframeDiv.className = "embedded_youtube_iframe";
-  iframeDiv.width = 1;
-  iframeDiv.height = 1;
   iframeDiv.frameBorder = 0;
-  iframeDiv.allow = "autoplay";
   iframeDiv.allowFullscreen = true;
 
   videoDiv.appendChild(iframeDiv);

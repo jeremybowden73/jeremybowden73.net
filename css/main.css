@@ -400,7 +400,7 @@ div {
     transition: opacity 0.5s linear;
     grid-gap: 50px;
     border: 1px dashed black;
-    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
     grid-auto-rows: 200px;
     /* margin-top: 20px; */
 }
@@ -408,7 +408,7 @@ div {
 #section2 .project {
     display: grid;
     grid-gap: 1px;
-    grid-template-columns: 10px repeat(5, 25px) 1fr repeat(5, 28px) 10px;
+    grid-template-columns: 10px repeat(5, 25px) 1fr repeat(5, 9%) 10px;
     grid-template-rows: 3px 32px repeat(7, 1fr) 3px;
     background-color:white;
 }
@@ -482,10 +482,10 @@ div {
   display: none;
   z-index: 3;
   position: fixed;
-  left: 5%;
-  top: 5%;
-  width: 90%;
-  height: 90%;
+  left: 3%;
+  top: 3%;
+  width: 94%;
+  height: 94%;
   grid-template-columns: 1fr repeat(10, 8%) 1fr;
   grid-template-rows: repeat(16, 5%) 1fr;
   background-color: white;
@@ -493,14 +493,22 @@ div {
   border: 1px solid gray;
   justify-items: center;
   align-items: center;
-  -webkit-align-items: center;
+  background-image: url("../img/whirlpool.png");
+  background-repeat: repeat;
 }
 
 .closeButton {
   grid-row: 2 / 3;
-  grid-column: 2 / 3;
-  font-size: 5rem;
-  transition: transform 0.5s;
+  grid-column: 3 / 11;
+  align-self: center;
+  text-align: center;
+  padding: 0.25vh 2vw;
+  color: white;
+  background-color: #bcbcbc;
+  border: 2px solid #222;
+  border-radius: 5px;
+  font-size: 2rem;
+  transition: transform 0.5s; 
 }
 
 .closeButton:hover {
@@ -510,14 +518,15 @@ div {
 
 .videoDiv {
   display: none;
-  grid-row: 6 / 16;
-  grid-column: 3 / 11;
-  /* transform: rotate(90deg);   if you want to rotate the video div by 90 deg */
 }
 
-.embedded_youtube_iframe {
-  width: 100%;
-  height: 25%;
+.videoDiv iframe {
+   border: 0;
+   position: absolute;
+   top: 20%;
+   height: 75%;
+   left: 15%;
+   width: 70%;
 }
 
 .replText {
@@ -726,19 +735,15 @@ fieldset {
    These examples override the primary ('portrait mobile first') styles.
    ========================================================================== */
 
-@media only screen and (max-width: 1024px) {
-    /* .mobile-banner {
-        display: grid;
-        height: 80px;
-    } */
-
-    /* .desktop-banner {
-        display: none;
-    } */
+/* For very narrow mobiles e.g. iPhone 5 */
+@media only screen and (max-width: 350px) {
+    .projectText {
+        font-size: 0.6rem;
+    }
 }
 
 /* For mobiles in Landscape orientation */
-@media only screen and (orientation:landscape) {
+@media only screen and (orientation:landscape) and (max-width: 1019px){
     #section1 img, #section4 img {
         width: 45%;
     }
@@ -759,6 +764,10 @@ fieldset {
     .grid-home {
         grid-template-rows: 5vh repeat(12, 7vh) 1fr;
     }
+
+    #section2 .project {
+        grid-template-columns: 80px repeat(5, 25px) 1fr repeat(5, 40px) 80px;
+    }
 }
 
 /* For tablets in portrait orientation */
@@ -769,6 +778,10 @@ fieldset {
     
     #section1 #photo img {
         width: 80%;
+    }
+
+    #section2 .gridContainer {
+    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
     }
 }
 
@@ -785,7 +798,7 @@ fieldset {
 
 
 /* For laptops and desktop screens */
-@media only screen and (min-width: 1020px) {
+@media only screen and (orientation:landscape) and (min-width: 1020px) {
     .mobile-banner {
         display: none;
     }
@@ -804,6 +817,10 @@ fieldset {
 
     .grid-home {
         grid-template-rows: 5vh repeat(12, 5vh) 1fr;
+    }
+
+    #section2 .gridContainer {
+    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
     }
 }
 
