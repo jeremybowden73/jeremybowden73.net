@@ -1,0 +1,1130 @@
+/* Global font properties and background colour   */
+html {
+    font-size: 1.2vw;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    background-color: transparent;
+}
+
+/*  General margin and padding for <body> */
+body {
+    position: static;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+}
+
+/* Formatting for the nav bar atop each page */
+.nav ul {
+    list-style: none;
+    background-color: #00d68b;      /* light green */
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.nav li {
+    font-weight: 700;
+    font-size: 1.25rem;
+    width: 7rem;
+    height: 6vh;
+    line-height: 6vh;
+    display: inline-block;
+    margin: 0 -5px 0 0;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+    display: block;
+
+    
+}
+
+.nav a:hover {
+    background-color: #007744;           /* dark green */
+    transition: background-color 0.5s;
+}
+
+.projects:hover {
+    background-color: #007744;
+}
+
+.nav a.active {
+    background-color: #b7b7b7;               /* grey */
+    color: #007744;                         /* dark green */
+    cursor: default;
+}
+
+.projects {
+    position: relative;
+}
+
+
+
+/* Dropdown menu for the Projects tab */
+
+/* Format the dropdown content box. */
+.dropdown-content {
+    /*display: none;                           NEEDS TO BE 'NONE'  */
+    position: absolute;
+    left: 70vw;
+    line-height: 1.5rem;
+    width: 18rem;
+    z-index: 1;
+    transition: left 0.5s;
+}
+
+/* Format the text content in the dropdown content box */
+.dropdown-content a {
+    font-size: 1rem;
+    color: white;
+    margin: 0.5rem 0;
+    padding: 0;
+    text-decoration: none;                  
+    text-align: center;
+    font-weight: 300;
+    border-radius: 0.5rem;
+    background-color: #007744;
+    border: 1px solid #007744;
+}
+
+/* Format the text content in the dropdown content box when it is
+   hovered over */
+.dropdown-content a:hover {
+    background-color: #00d68b;
+}
+
+/* Shows dropdown content when the dropdown class is hovered over */
+.projects:hover .dropdown-content {
+    display: block;
+    left: -5rem;
+    transition: left 0.5s ease-out;
+}
+
+
+p {
+    margin: 0 auto;
+}
+
+h1 {
+    margin: 0;
+}
+
+h2 {
+    margin: 2% 0 0 0;
+    font-weight: normal;
+    font-size: 3rem;
+}
+
+h3 {
+    display: block;
+    margin: 0;
+    font-weight: normal;
+    font-size: 1.1rem;
+}
+
+/* standard horizontal rule */
+.hr1 {
+    clear: left;
+    border: 0;
+    background-color: #000000;  /* not #2e8b57 */
+    height: 1px;
+    margin: 0 0 0 0;
+}
+
+/* and another! */
+.hr2 {
+    border: 0;
+    background-color: #ff5300;
+    height: 0.3rem;
+    margin: 1rem 20vw;
+}
+
+/* h2 specifically for the Find section */
+#find {
+    display: inline;
+    margin: 2% 0 0 0;
+    font-weight: normal;
+    font-size: 3rem;
+}
+
+/* Hyperlink styling for main bodies of text */
+a.hyperlink {
+    text-decoration: underline;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #036dd4;
+}
+
+/* Hyperlink styling for h3 headings */
+a.hyperlinkh3 {
+    text-decoration: underline;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #036dd4;
+}
+
+a.hyperlink:hover {
+    background-color: #cee7ff;
+}
+
+.fontMonospace {
+    font: italic 1.25rem monospace; 
+}
+
+
+/*   **************   INDEX PAGE STYLING RULES   ***************   */
+
+/*  Index page image container  */
+#indexImageContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 40vw;
+    height: 100vh;
+}
+
+/*  'Hero image' for index page */
+#indexImage {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Index page blurb pane   */
+#indexBlurbContainer {
+    position: fixed;
+    top: 6vh;
+    left: 40vw;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 60vw;
+    height: 84vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+/* define general properties class for all elements in the
+    index page blurb pane */
+.indexBlurb {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0 5rem;
+    display: block;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+#indexMainHeading {
+    font-size: 3.5rem;
+    font-family: 'Playfair Display', serif;
+    padding-top: 10rem;
+}
+
+#indexSubHeading {
+    font-size: 1.2rem;
+    padding-top: 1rem;
+    padding-bottom: 5rem;
+}
+
+#indexAboutMe {
+    text-align: center;
+}
+
+
+/*  Members of SocialMediaLogos  */
+.socialLogo {
+    height: 4vh;
+    margin: 0.25vh 0.75vw;
+    object-fit: fill;
+}
+
+
+.socialMediaLogos {    
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    text-decoration: none;
+    margin: 0 auto;
+    padding: 1vh 0 0 0;
+    /*height: auto;
+    position: absolute;
+    left: 40%;
+    bottom: 10%;
+    text-align: center;
+    width: 20%;*/
+}
+
+
+
+/* Format the dropdown content box on the Projects pages.
+    Default is not displayed (until it is hovered over) */
+.dropdown-content-projectsLink {
+    display: none;                            /*   NEEDS TO BE NONE  */
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    background-color: transparent;
+    line-height: 2rem;
+    width: 26rem;
+    z-index: 1;
+}
+
+/* Format the text content in the dropdown content box */
+.dropdown-content-projectsLink a {
+    font-variant: normal;
+    background-color: white;
+    color: #ff5300;
+    margin: 0.5rem 0;
+    padding: 0.2rem 1rem;
+    text-decoration: none;
+    display: block;
+    border-radius: 0.5rem;
+    border: 1px solid #ff5300;
+}
+
+/* Format the text content in the dropdown content box when it is
+   hovered over */
+.dropdown-content-projectsLink a:hover {
+    background-color: #ff5300;
+    color: white;
+}
+
+
+
+/* Shows dropdown content when the dropdown class is hovered over */
+.projectsLink:hover .dropdown-content-projectsLink {
+    display: block;
+}
+
+
+
+
+
+/*     General formatting for sections e.g. headers, footers     */
+
+.header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 6vh;
+    width: 100%;
+    background-color: transparent;
+    overflow: visible;
+    z-index: 1;
+}
+
+.indexHeader {
+    position: fixed;
+    left: 40vw;
+    top: 0;
+    height: 6vh;
+    width: 60vw;
+    background-color: transparent;
+    overflow: visible;
+    z-index: 1;
+}
+
+.headerSocialMedia {
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 6vh;
+    width: 12%;
+    background-color: transparent;
+    z-index: 1;
+}
+
+/* repl.it content page header */ 
+.replHeader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 15%;
+    width: 100%;
+    background-color: transparent;
+    z-index: 1;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 10vh;
+    width: 100%;
+    background-color: transparent;
+    z-index: 1;
+}
+
+.indexFooter {
+    position: fixed;
+    left: 40vw;
+    bottom: 0;
+    height: 10vh;
+    width: 60vw;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    z-index: 1;
+}
+
+.content {
+    box-sizing: border-box;
+    position: fixed;
+    left: 0;
+    top: 6vh;
+    margin: 0;
+    padding: 0 10vw;
+    height: 94vh;
+    width: 100%;
+    text-align: left;
+    line-height: 1.5;
+    background-color: transparent;
+    overflow-y: auto;
+}
+
+.projectsMainHeading {
+    box-sizing: border-box;
+    position: relative;
+    margin: 0 auto;
+    padding: 1rem;
+    left: 0;
+    width: 100%;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.projectsSubHeading {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0 2rem;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+/*  projects page "See more here" buttons  */
+.projectsLink {
+    margin: 0;
+    display: inline-block;
+    top: 1.5rem;
+    left: 2rem;
+    font-size: 1.1rem;
+    color: white;
+    border-radius: 0.5rem;
+    padding: 0.75rem 3rem;
+    position: relative;
+    background-color: #676767;
+    border: 1px solid #ff5300; /* cadmium orange */
+}
+
+.projectsInfoLeft {
+    float: left;
+    margin: 0 0 8% 0;
+    width: 60%;
+}
+
+.projetsInfoRight {
+    clear: left;
+    display: inline-block;
+    position: relative;
+    margin: 2vh 0;
+    left: 4vw;
+    width: 30%;
+}
+
+
+.embedded_repl_iframe {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    float: left;
+    width: 60%;         /* controls width and */
+    height: 90%;       /* height of embedded iframe */
+}
+
+.replPageBlurb {
+    position: relative;
+    left: 2%;
+}
+
+
+/* Background image formatting for the Projects pages */
+
+.projectsImage {
+    position: fixed;
+    left: 0;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    background-size: 100% 100%;
+}
+
+#projectsCS50x {
+    background-image: url("../images/cs50x-background-75pcbright.jpg");
+    filter: blur(1px) opacity(0.6);
+    background-color: white;
+    width: 100%;
+    height: 100%;
+}
+
+#projectsCS50x::before {
+  background-color: rgb(250, 250, 250);
+  opacity: 0.8;
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: lighten;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#projectsCS50x::after {
+  background-color: rgb(236, 183, 183);
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: lighten;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#projectsMDN-HTML-CSS {
+    background-image: url("../images/mdn-background-bw-50pcbright.png");
+    filter: blur(1px) opacity(0.6);
+    background-color: white;
+    width: 100%;
+    height: 100%;
+}
+
+#projectsMDN-HTML-CSS::before {
+  background-color: rgb(250, 250, 250);
+  opacity: 0.8;
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: lighten;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#projectsMDN-HTML-CSS::after {
+  background-color: rgb(250, 0, 0);
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: lighten;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+
+/* repl.it content pages formatting */
+.replPageContent {
+    position: fixed;
+    left: 0;
+    top: 15%;
+    margin: 0;
+    padding: 0 6% 0 6%;
+    height: 85%;
+    width: auto;
+    text-align: left;
+    line-height: 1.5;
+    background-color: transparent;
+    overflow-y: auto;
+}
+
+.backButtonContainer {
+    display: inline-block;
+    width: 40%;
+    position: relative;
+}
+
+button.backButton {
+    width: 50%;
+    margin-left: 25%;
+    border-radius: 0.5rem;
+    padding: 0.5rem 0;
+    position: relative;
+    background-color: #676767;
+    border: 1px solid #ff5300; /* cadmium orange */
+    color: white;
+    font-size: 1.1rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+button.centralBackButton {
+    position: fixed;
+    left: 40%;
+    bottom: 3%;
+    height: 5%;
+    width: 20%;
+    border-radius: 0.5rem;
+    background-color: #676767;
+    border: 1px solid #ff5300; /* cadmium orange */
+    color: white;
+    font-size: 1.1rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+/* YouTube content pages formatting */
+
+.youtubePageContent {
+    box-sizing: border-box;
+    position: fixed;
+    left: 0;
+    top: 15%;
+    margin: 0;
+    height: 85%;
+    width: 100%;
+    padding: 0 10% 5% 10%;
+    font-size: 1.6rem;
+    text-align: left;
+    line-height: 1.5;
+    background-color: transparent;
+}
+
+.embedded_youtube_iframe {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    left: 10%;
+    width: 80%;         /* controls width and */
+    height: 95%;       /* height of embedded iframe */
+}
+
+
+
+
+/*     ******************** CONTACT PAGE ******************     */
+
+.contactMainHeading {
+    box-sizing: border-box;
+    position: relative;
+    margin: 0 auto;
+    padding: 2rem;
+    left: 0;
+    width: 100%;
+    font-size: 6rem;
+    font-family: 'Sacramento', cursive;
+    text-align: center;
+}
+
+.contactDiv {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 1.5rem;
+    text-align: center;
+}
+
+.contactSocialLogo {
+    display: inline-block;
+    vertical-align: middle;
+    height: 3rem;
+}
+
+.contactText {
+    display: inline-block;
+    padding-left: 1rem;
+    font-size: 1.25rem;
+    letter-spacing: 0.25rem;
+    text-decoration: none;
+    font-weight: 500;
+    color: black;
+}
+
+#contactTextWWW {
+    font-family: 'Sacramento', cursive;
+    font-size: 3rem;
+}
+
+.termsOfUse {
+    text-align: left;
+    font-size: 0.75rem;
+}
+
+
+
+
+/*     ******************** CLASSES PAGE ******************     */
+
+/* Background image formatting */
+
+#classes {
+    background-image: url("../images/36124472.jpg");
+    filter: blur(1px) opacity(0.6);
+    background-color: white;
+    width: 100%;
+    height: 100%;
+}
+
+#classes::before {
+  background-color: rgb(255, 255, 255);
+  opacity: 0.8;
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: lighten;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#classes::after {
+  background-color: rgb(225, 225, 225);
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: lighten;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+
+
+/*     ******************** ABOUT ME PAGE ******************     */
+
+.aboutmeHeader {
+    text-align: center;
+    margin: 2rem 0 1rem 0;
+    font-weight: normal;
+    font-size: 2rem;
+}
+
+.aboutmeLeftColumn {
+    float: left;
+    display: inline-block;
+    margin: 2vh 0;
+    width: 38vw;
+}
+
+.aboutmeRightColumn {
+    clear: left;
+    display: inline-block;
+    position: relative;
+    margin: 2vh 0;
+    left: 4vw;
+    width: 38vw;
+}
+
+
+/*        ************************ MDN-HTML-CSS PAGE ********************* */
+
+/* Create three equal columns that floats next to each other */
+.mdnhtmlcss-column {
+    box-sizing: border-box;
+    float: left;
+    width: 25%;
+    padding: 2% 4%;
+    text-align: left;
+}
+
+/* Clear floats after the columns */
+.mdnhtmlcss-row:after {
+    box-sizing: border-box;
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.mdnhtmlcss-columnHeading {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0 1rem;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+
+
+
+
+/*
+                                   <<<<<   MEDIA QUERIES   >>>>>
+*/
+
+/* media query for mobiles in landscape */
+@media screen and (orientation: landscape) and (max-width: 900px) {
+
+    html {
+        font-size: 1.8vw;
+    }
+
+    #indexMainHeading {
+        padding-top: 3rem;
+        font-size: 2.5rem;
+    }
+
+    #indexSubHeading {
+        padding-bottom: 2rem;
+    }
+
+    .nav li {
+        width: 5rem;
+        font-size: 1rem;
+    }
+
+    .dropdown-content {
+        line-height: 4vh;
+    }
+
+    .dropdown-content-projectsLink {
+        width: 20rem;
+    }
+
+    .headerSocialMedia {
+        width: 15%;
+    }
+
+    .embedded_repl_iframe {
+        width: 100%;
+        height: 160%;
+    }
+
+    button.backButton {
+        width: 70%;
+        margin-left: 84%;
+    }
+
+    .embedded_youtube_iframe {
+        width: 90%;
+        left: 5%;
+    }
+
+    .aboutmeMainHeading {
+        padding: 0;
+        font-size: 3rem;
+    }
+
+}
+
+
+/* media query for tablets in landscape */
+@media screen and (orientation: landscape) and (max-width: 1200px) 
+and (min-width: 901px) {
+
+    html {
+        font-size: 1.8vw;
+    }
+
+    /*#indexMainHeading {
+        background-color: yellow;
+    }*/
+
+    .dropdown-content-projectsLink {
+        width: 20rem;
+    }
+
+    .headerSocialMedia {
+        width: 15%;
+    }
+
+    .embedded_repl_iframe {
+        width: 100%;
+        height: 80%;                    /* changed compared to mobiles in landscape */
+    }
+
+    button.backButton {
+        width: 70%;
+        margin-left: 84%;
+    }
+
+    .embedded_youtube_iframe {
+        width: 100%;                    /* changed compared to mobiles in landscape */
+        height: 80%;                    /* changed compared to mobiles in landscape */
+        left: 0%;                       /* changed compared to mobiles in landscape */
+    }
+
+}
+
+
+
+/* media query for mobiles in portrait */
+@media screen and (orientation: portrait) and (max-width: 600px) {
+
+    html {
+        font-size: 3.75vw;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    .header {
+        height: 9vh;
+    }
+
+    .nav li {
+        height: 4.5vh;
+        line-height: 4.5vh;
+    }
+
+    #indexImageContainer {
+        left: 25vw;
+        width: 50vw;
+        height: 35vh;
+    }
+
+    .indexHeader {
+        top: 35vh;
+        left: 0;
+        width: 100vw;
+    }
+
+    #indexBlurbContainer {
+        top: 41vh;
+        left: 0;
+        width: 100vw;
+        height: 49vh;
+    }
+
+    .indexBlurb {
+        padding: 0 3rem;
+    }
+
+    .indexFooter {
+        left: 0;
+        width: 100vw;
+    }  
+
+    #indexMainHeading {
+        /*background-color: pink;*/
+        padding-top: 3rem;
+        font-size: 2.5rem;
+    }
+
+    .dropdown-content {
+        left: 100vw;
+    }
+
+    .headerSocialMedia {
+        z-index: 0;
+    }
+
+    .socialLogo {
+        width: 6.5vw;
+        height: 6.5vw;
+    }
+
+    .projectsInfoLeft {
+        width: 48%;
+    }
+
+    .projectsMainHeading {
+        padding: 0.5rem;
+    }
+
+    .projectsSubHeading {
+        padding: 0 0.5rem;
+    }
+
+    .projectsLink {
+        padding: 0.5rem 1rem;
+    }
+
+    .projects:hover .dropdown-content {
+        display: block;
+        left: 0;
+        transition: left 0.5s ease-out;
+    }
+
+    .content {
+        top: 9vh;
+        height: 91vh;
+        padding: 0 6vw;
+    }
+
+    .dropdown-content-projectsLink {
+        line-height: 1.5rem;
+        width: 10rem;
+    }
+
+    .embedded_repl_iframe {
+        width: 100%;
+        height: 90%;
+    }
+
+    button.backButton {
+        width: 120%;
+        margin-left: 60%;
+    }
+
+    button.centralBackButton {
+        width: 36%;
+        left: 32%;
+    }
+
+    .embedded_youtube_iframe {
+        width: 100%;
+        height: 25%;
+        left: 0%;
+    }
+
+    .contactText {
+        display: block;
+    }
+
+    .aboutmeLeftColumn {
+        width: 80vw;
+    }
+
+    .aboutmeRightColumn {
+        left: 0;
+        width: 80vw;
+    }
+
+    .hr2 {
+        margin: 4rem 20vw;
+    }
+
+    .contactMainHeading {
+        font-size: 3rem;
+    }
+
+    .mdnhtmlcss-column {
+        width: 100%;
+        padding: 10% 10%;
+    }
+
+}
+
+
+/* media query for tablets in portrait */
+@media screen and (orientation: portrait) and (max-width: 1050px) 
+and (min-width: 601px) {
+
+    html {
+        font-size: 2.25vw;              /* changed compared to mobiles in portrait */
+    }
+
+    #indexImageContainer {
+        left: 30vw;                     /* changed compared to mobiles in portrait */
+        width: 40vw;                    /* changed compared to mobiles in portrait */
+        height: 35vh;
+    }
+
+    .indexHeader {
+        top: 35vh;
+        left: 0;
+        width: 100vw;
+    }
+
+    #indexBlurbContainer {
+        top: 41vh;
+        left: 0;
+        width: 100vw;
+        height: 49vh;
+    }
+
+    .indexFooter {
+        left: 0;
+        width: 100vw;
+    }  
+
+    #indexMainHeading {
+        /*background-color: lime;*/
+        padding-top: 3rem;
+    }
+
+    .dropdown-content {
+        left: 100vw;
+    }
+
+    .headerSocialMedia {
+        z-index: 0;
+    }
+
+    .socialLogo {
+        width: 4.5vw;               /* changed compared to mobiles in portrait */
+        height: 4.5vw;              /* changed compared to mobiles in portrait */
+    }
+
+    .projectsInfoLeft {
+        width: 48%;
+    }
+
+    .projectsMainHeading {
+        padding: 0.5rem;
+    }
+
+    .projectsSubHeading {
+        padding: 0 0.5rem;
+    }
+
+    .dropdown-content-projectsLink {
+        line-height: 1.5rem;
+        width: 14rem;
+    }
+
+    .embedded_repl_iframe {
+        width: 100%;
+        height: 75%;                /* changed compared to mobiles in portrait */
+    }
+
+    button.backButton {
+        width: 120%;
+        margin-left: 60%;
+    }
+
+    button.centralBackButton {
+        width: 36%;
+        left: 32%;
+    }
+
+    .embedded_youtube_iframe {
+        width: 100%;
+        height: 38%;                /* changed compared to mobiles in portrait */
+        left: 0%;
+    }
+
+    .hr2 {
+        margin: 0 20vw;
+    }
+
+     .mdnhtmlcss-column {
+        width: 50%;
+        padding: 6% 10%;
+    }
+}
+
+
+
+
+
+
+
+
+
+

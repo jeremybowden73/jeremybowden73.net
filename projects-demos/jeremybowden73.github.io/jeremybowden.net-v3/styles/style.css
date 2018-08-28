@@ -1,0 +1,538 @@
+/* Global font properties and background colour   */
+html {
+    font-size: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    background-color: transparent;
+}
+
+/*  General margin and padding for <body> */
+body {
+    position: static;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+}
+
+p {
+    margin: 0 auto;
+}
+
+h2 {
+    margin: 5vh 0 0 0;
+    font-weight: normal;
+    font-size: 5rem;
+}
+
+h3 {
+    margin: 0 0 3vh 0;
+    font-weight: normal;
+    font-size: 2rem;
+}
+
+/*  Remove default styling for links  */
+a:link, a:visited {
+    text-decoration: none;
+    color: white;
+    background-color: transparent;
+}
+
+/*  Remove default styling for links  */
+a:active {
+    text-decoration: none;
+}
+
+/* Hyperlink styling for main bodies of text */
+a.hyperlink {
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #cd0000;
+}
+
+/* Hyperlink styling for h3 headings */
+a.hyperlinkh3 {
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 500;
+    color: #cd0000;
+}
+
+
+
+
+/*   **************   INDEX PAGE STYLING RULES   ***************   */
+
+/*  Index page left pane  */
+#leftBox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 40vw;
+    height: 100vh;
+}
+
+/*  'Hero image' for index page */
+#indexImage {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Index page right pane   */
+#rightBox {
+    position: relative;
+    top: 0;
+    left: 40vw;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 60vw;
+    height: 100vh;
+    overflow: auto;
+}
+
+/* define general properties class for all ids in the index page right pane
+   which will then allow the position of each id (which follow below) to be set
+   from the top of the right pane */
+
+.insideRightBox {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0 4vw;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+#indexMainHeading {
+    font-size: 5rem;
+    font-family: 'Playfair Display', serif;
+    top: 12%;
+}
+
+#indexSubHeading {
+    /*color: #1a7a21;*/
+    font-size: 1.8rem;
+    top: 24%;
+}
+
+#indexAboutMe {
+    font-size: 1.6rem;
+    text-align: justify;
+    line-height: 1.4;
+    top: 35%;
+}
+
+
+
+
+
+
+
+/*  Horizontal list ("nav bar effect")  */
+.noBullet {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-size: 2.5rem;
+    text-decoration: none;
+    /*letter-spacing: 0.1vw;*/
+    font-variant: small-caps;
+}
+
+/*  Member of Horizontal list ("nav bar effect")  */
+.navBarMember {
+    margin: 1vw;
+    height: inherit;
+    display: inline-block;
+    color: white;
+    opacity: 0.8;
+    border-radius: 0.5vw;
+    padding: 0;
+    position: relative;
+}
+
+.indexNavBar {
+    padding: 0 3vw;
+    top: 60%;
+}
+
+li.navBarMember:nth-child(1) {
+    background-color: #b23aee; /* dark orchid 2 */
+    border: 1px solid #b23aee;
+}
+
+li.navBarMember:nth-child(2) {
+    background-color: #00c957;  /* emerald green */
+    border: 1px solid #00c957;
+}
+
+li.navBarMember:nth-child(3) {
+    background-color: #ff6103; /* cadmium orange */
+    border: 1px solid #ff6103;
+}
+
+li.navBarMember:nth-child(4) {
+    background-color: #00ced1; /* dark turquiose */
+    border: 1px solid #00ced1;
+}
+
+/*  Hovered-over "nav bar" item */
+.indexNavBar:hover li.navBarMember:hover {
+    transition: all 0.7s linear;
+    opacity: 1;
+}
+
+/*  Unhovered "nav bar" item */
+.indexNavBar:hover li.navBarMember{
+    transition: all 0.7s linear;
+    opacity: 0.1;
+
+}
+
+#indexSocialMediaLogos {
+    top: 90%;
+}
+
+/*  Members of SocialMediaLogos  */
+.socialLogo {
+    width: 2.5vw;
+    height: 2.5vw;
+    margin: 0 0.75vw;
+    object-fit: fill;
+}
+
+
+.socialMediaLogos {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    text-decoration: none;
+    margin: 0 auto;
+    padding: 0;
+    bottom: 0;
+}
+
+
+/* Dropdown menus */
+/* Format the dropdown content box. Default is not displayed (until it
+   is hovered over) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    left: -14vw;
+    background-color: transparent;
+    line-height: 2vh;
+    width: 39vw;
+    z-index: 1;
+}
+
+/* Format the text content in the dropdown content box */
+.dropdown-content a {
+    font-variant: normal;
+    color: black;
+    margin: 0.5vh 0;
+    padding: 0.5vh 0.5vw;
+    text-decoration: none;
+    text-align: left;
+    font-size: 1.5rem;
+    display: block;
+    border-radius: 0.5vw;
+    border: 1px solid #ff6103;
+}
+
+/* Format the text content in the dropdown content box when it is
+   hovered over */
+.dropdown-content a:hover {
+    background-color: #ff6103;
+    color: white;
+}
+
+/* Shows dropdown content when the dropdown class is hovered over */
+.navBarMember:hover .dropdown-content {
+    display: block;
+}
+
+
+
+
+
+
+/*     ******************** PROJECTS PAGES ******************     */
+
+.header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 20vh;
+    width: 100%;
+    background-color: transparent;
+    z-index: 1;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 20vh;
+    width: 100%;
+    background-color: transparent;
+    z-index: 1;
+}
+
+
+
+.projectsMainHeading {
+    box-sizing: border-box;
+    position: relative;
+    margin: 0 auto;
+    padding: 3vh 4vw 2vh 4vw;
+    left: 0;
+    width: 100%;
+    font-size: 3.5rem;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+
+.projectsSubHeading {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0 4vw;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    /*color: #2e8b57;*/
+    font-size: 2rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+.projectsFooterBox {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 2.5vh 4vw 0 4vw;
+    position: flex;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+/* Background image styling */
+.projectsImage {
+    position: fixed;
+    left: 0;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    background-size: 100% 100%;
+    
+}
+
+/* Background image colourising */
+/*.projectsImageLayer {
+    background-color: rgba(0, 0, 0, 0);
+    width: 100%;
+    height: 100%;
+}*/
+
+
+.projectsContent {
+    position: fixed;
+    left: 0;
+    top: 20vh;
+    margin: 0;
+    padding: 0 6vw;
+    height: 60vh;
+    width: auto;
+    text-align: center;
+    font-size: 1.6rem;
+    text-align: justify;
+    line-height: 1.4;
+    background-color: transparent;
+    overflow-y: auto;
+}
+
+/* standard horizontal rule */
+.hr1 {
+    border: 0;
+    color: green;
+    background-color: #2e8b57;
+    height: 0.5vh;
+    margin: 12vh 0 0 0;
+}
+
+.embedded_iframe {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 3vh 5vw;
+}
+
+#projectsCS50x {
+    background-image: url("../images/cs50x-background-75pcbright.jpg");
+    filter: blur(1px) opacity(0.6);
+    background-color: white;
+    width: 100%;
+    height: 100%;
+}
+
+#projectsCS50x::before {
+  background-color: rgb(0, 0, 255, 0.6);
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: lighten;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#projectsCS50x::after {
+  background-color: rgb(140, 140, 140);
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: lighten;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+
+
+/*  Media query for laptop screens and tablets/mobiles in landscape orientation  */
+@media screen and (min-aspect-ratio: 100/133) {
+    
+    .navBarMember {
+        width: 20%;
+    }
+
+    /*.header {
+        background-color: red;
+    }*/
+}
+
+/*  Media query for mobiles and tablets in portrait orientation  */
+@media screen and (max-aspect-ratio: 99/100) {
+    
+    .insideRightBox {
+        padding: 0 8vw;
+    }
+
+    .navBarMember {
+        width: 40%;
+    }
+
+    #leftBox {
+        width: 100vw;
+        height: 30vh;
+    }
+
+    #rightBox {
+        top: 30vh;
+        left: 0;
+        width: 100vw;
+        height: 70vh;
+    }
+
+    #indexMainHeading {
+        font-size: 3rem;
+        top: 8%;
+    }
+
+    #indexSubHeading {
+        font-size: 1rem;
+        top: 20%;
+    }
+
+    #indexAboutMe {
+        font-size: 1rem;
+        top: 30%;
+    }
+
+    #indexNavBar {
+        top: 65%;
+    }
+
+    .noBullet {
+        font-size: 1.5rem;
+    }
+
+    .socialLogo {
+        width: 6vw;
+        height: 6vw;
+        padding: 0 1.5vw;
+    }
+
+    .projectsFooterBox {
+        padding: 2.5vh 4vw;
+    }
+
+    .projectsMainHeading {
+        font-size: 2rem;
+    }
+
+    .projectsSubHeading {
+        font-size: 1.25rem;
+    }
+
+
+    /*.header {
+        background-color: yellow;
+    }*/
+
+
+
+    /* Additional media query for "squarer" handhelds (e.g. iPads)
+       in portrait orientation */
+    @media screen and (min-aspect-ratio: 70/100) {
+            
+            #indexMainHeading {
+                top: 6%;
+            }
+
+            #indexAboutMe {
+                font-size: 1.75rem;
+            }
+
+            #indexNavBar {
+                top: 60%;
+            }
+
+            .noBullet {
+                font-size: 2.5rem;
+            }
+
+            /*.header {
+                background-color: grey;
+            }*/
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
