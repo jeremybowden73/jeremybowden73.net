@@ -12,7 +12,7 @@ const projectsInformation = [
     knowledge: "Building a command-line app; adding a front-end and deploying to a server."
   },
   {
-    color: "MediumBlue",
+    color: "indigo",
     projectPicture: "img/projects/twitter-client.png",
     videoOrDemo: "video",
     linkType: "youtube",
@@ -23,7 +23,7 @@ const projectsInformation = [
     knowledge: "Getting data from a REST API. Templating HTML. HTTP route-handling."
   },
   {
-    color: "BlueViolet",
+    color: "#723906",
     projectPicture: "img/projects/anagram.png",
     videoOrDemo: "demo",
     linkType: "repl",
@@ -34,7 +34,7 @@ const projectsInformation = [
     knowledge: "Low-level memory management, functional programming, Linked lists."
   },
   {
-    color: "MediumSpringGreen",
+    color: "green",
     projectPicture: "img/projects/employee-directory.png",
     videoOrDemo: "demo",
     linkType: "webpage",
@@ -67,7 +67,7 @@ const projectsInformation = [
     knowledge: "DOM manipulation and Event-handling with JavaScript."
   },
   {
-    color: "MediumBlue",
+    color: "indigo",
     projectPicture: "img/projects/website-v1.png",
     videoOrDemo: "demo",
     linkType: "webpage",
@@ -78,7 +78,7 @@ const projectsInformation = [
     knowledge: "Building a website from scratch. Deploying via GitHub."
   },
   {
-    color: "DarkGoldenrod",
+    color: "#723906",
     projectPicture: "img/projects/form-validation.png",
     videoOrDemo: "demo",
     linkType: "webpage",
@@ -89,7 +89,7 @@ const projectsInformation = [
     knowledge: "Validating user input on 'Submit' and in real-time."
   },
   {
-    color: "Crimson",
+    color: "green",
     projectPicture: "img/projects/initials.png",
     videoOrDemo: "demo",
     linkType: "repl",
@@ -100,7 +100,7 @@ const projectsInformation = [
     knowledge: "Conditionals, For loops."
   },
   {
-    color: "Navy",
+    color: "indigo",
     projectPicture: "img/projects/pagination-content-filter.png",
     videoOrDemo: "demo",
     linkType: "webpage",
@@ -111,7 +111,7 @@ const projectsInformation = [
     knowledge: "Event-handling and DOM manipulation."
   },
   {
-    color: "DarkGoldenrod",
+    color: "#723906",
     projectPicture: "img/projects/mashup.png",
     videoOrDemo: "video",
     linkType: "youtube",
@@ -133,7 +133,7 @@ const projectsInformation = [
     knowledge: "Low-level functionasl programming: file access, loops, conditionals."
   },
   {
-    color: "DimGray",
+    color: "#723906",
     projectPicture: "img/projects/random-quote-generator.png",
     videoOrDemo: "demo",
     linkType: "webpage",
@@ -144,7 +144,7 @@ const projectsInformation = [
     knowledge: "Injecting HTML with JavaScript, Functions, Objects."
   },
   {
-    color: "Indigo",
+    color: "indigo",
     projectPicture: "img/projects/pong.png",
     videoOrDemo: "demo",
     linkType: "webpage",
@@ -155,7 +155,7 @@ const projectsInformation = [
     knowledge: "Loops, Conditionals, Events, Operators."
   },
   {
-    color: "Crimson",
+    color: "#723906",
     projectPicture: "img/projects/tweets.png",
     videoOrDemo: "video",
     linkType: "youtube",
