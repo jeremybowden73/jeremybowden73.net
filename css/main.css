@@ -296,7 +296,6 @@ div {
     height: 95vh;
     background-image: url("../img/whirlpool.png");
     background-repeat: repeat;
-    /* padding: 15px; */
 }
 
 .grid-socialMediaLogos {
@@ -323,26 +322,25 @@ div {
 #section1 #email, #section4 #email {
     grid-column: 3 / 4;
     grid-row: 1 / 2;
-    justify-self: center;
-    /* width: 150%; */
+    text-align: center;
 }
 
 #section1 #twitter, #section4 #twitter {
     grid-column: 6 / 7;
     grid-row: 1 / 2;
-    /* width: 150%; */
+    text-align: center;
 }
 
 #section1 #github, #section4 #github {
     grid-column: 9 / 10;
     grid-row: 1 / 2;
-    /* width: 150%; */
+    text-align: center;
 }
 
 #section1 #linkedin, #section4 #linkedin {
     grid-column: 12 / 13;
     grid-row: 1 / 2;
-    /* width: 150%; */
+    text-align: center;
 }
 
 #section1 #photo {
@@ -359,6 +357,10 @@ div {
     border-radius: 50%;
 }
 
+#section1 #photo img {
+    width: 100%;
+}
+
 #section1 #hello {
     grid-column: 3 / 13;
     grid-row: 6 / 7;
@@ -373,6 +375,7 @@ div {
     grid-column: 6 / 10;
     grid-row: 14 / 15;
     width: 100%;
+    text-align: center;
     cursor: pointer;
 }
 
@@ -722,7 +725,7 @@ fieldset {
 
 /* ==========================================================================
    Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
+   These examples override the primary ('portrait mobile first') styles.
    ========================================================================== */
 
 @media only screen and (max-width: 1024px) {
@@ -736,6 +739,41 @@ fieldset {
     } */
 }
 
+/* For mobiles in Landscape orientation */
+@media only screen and (orientation:landscape) {
+    #section1 img, #section4 img {
+        width: 45%;
+    }
+
+    #section1 {
+        height: 115vh;
+    }
+
+    #section1 #photo {
+        grid-row: 1 /5;
+    }
+
+    #section1 #blurb {
+        grid-column: 2 / 14;
+        grid-row: 7 / 14;
+    }
+
+    .grid-home {
+        grid-template-rows: 5vh repeat(12, 7vh) 1fr;
+    }
+}
+
+/* For tablets in portrait orientation */
+@media only screen and (orientation:portrait) and (min-width: 720px) {
+    #section1 img, #section4 img {
+        width: 60%;
+    }
+    
+    #section1 #photo img {
+        width: 80%;
+    }
+}
+
 @media only screen and (min-width: 1025px) {
     .mobile-banner {
         display: none;
@@ -745,6 +783,7 @@ fieldset {
         display: grid;
     }
 }
+
 
 @media print,
        (-webkit-min-device-pixel-ratio: 1.25),
