@@ -384,14 +384,14 @@ div {
 /* SECTION 2 (PROJECTS PAGE) */
 
 #section2 {
-    /* height: 80vh; */
-    background-image: url("../img/bo_play_pattern.png");
-    background-repeat: repeat;
+    /* background-image: url("../img/bo_play_pattern.png");
+    background-repeat: repeat; */
+    background-color: #fffcef;
     padding: 20px;
 }
 
 #section2 .heading {
-    color: white;
+    color: #ff7700;
 }
 
 #section2 .gridContainer {
@@ -399,7 +399,6 @@ div {
     opacity:1;
     transition: opacity 0.5s linear;
     grid-gap: 50px;
-    border: 1px dashed black;
     grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
     grid-auto-rows: 200px;
     /* margin-top: 20px; */
@@ -411,6 +410,8 @@ div {
     grid-template-columns: 10px repeat(5, 25px) 1fr repeat(5, 9%) 10px;
     grid-template-rows: 3px 32px repeat(7, 1fr) 3px;
     background-color:white;
+    border: 1px solid #ff7700;
+    border-radius: 10px;
 }
 
 #section2 .projectPicture {
