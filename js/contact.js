@@ -57,7 +57,7 @@ validateForm();
 function validateForm() {
   const formInput = document.querySelector("form");
   // disable HTML5 form validation
-  formInput.setAttribute("novalidate", true);
+  // formInput.setAttribute("novalidate", true);
   // create event listener for the form's Submit button
   formInput.addEventListener("submit", e => {
     // create consts for form fields to be validated
