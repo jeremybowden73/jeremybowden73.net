@@ -1,7 +1,7 @@
 // data for each of the projects in the Projects section
 const projectsInformation = [
   {
-    color: "green",
+    color: "#723906",
     projectPicture: "img/projects/web-scraper.png",
     videoOrDemo: "demo",
     linkType: "webpage",
@@ -12,7 +12,7 @@ const projectsInformation = [
     knowledge: "Building a command-line app; adding a front-end and deploying to a server."
   },
   {
-    color: "indigo",
+    color: "#723906",
     projectPicture: "img/projects/twitter-client.png",
     videoOrDemo: "video",
     linkType: "youtube",
@@ -34,7 +34,7 @@ const projectsInformation = [
     knowledge: "Low-level memory management, functional programming, Linked lists."
   },
   {
-    color: "green",
+    color: "#723906",
     projectPicture: "img/projects/employee-directory.png",
     videoOrDemo: "demo",
     linkType: "webpage",
@@ -45,7 +45,7 @@ const projectsInformation = [
     knowledge: "Using JavaScript's Fetch API and 3rd-party APIs. CSS Grid layout. DOM manipulation with JS."
   },
   {
-    color: "indigo",
+    color: "#723906",
     projectPicture: "img/projects/finance.png",
     videoOrDemo: "video",
     linkType: "youtube",
@@ -56,7 +56,7 @@ const projectsInformation = [
     knowledge: "Creating routes in a back-end framework. Managing data in SQL database."
   },
   {
-    color: "green",
+    color: "#723906",
     projectPicture: "img/projects/tictactoe.png",
     videoOrDemo: "demo",
     linkType: "webpage",
@@ -67,7 +67,7 @@ const projectsInformation = [
     knowledge: "DOM manipulation and Event-handling with JavaScript."
   },
   {
-    color: "indigo",
+    color: "#723906",
     projectPicture: "img/projects/website-v1.png",
     videoOrDemo: "demo",
     linkType: "webpage",
@@ -89,7 +89,7 @@ const projectsInformation = [
     knowledge: "Validating user input on 'Submit' and in real-time."
   },
   {
-    color: "green",
+    color: "#723906",
     projectPicture: "img/projects/initials.png",
     videoOrDemo: "demo",
     linkType: "repl",
@@ -100,7 +100,7 @@ const projectsInformation = [
     knowledge: "Conditionals, For loops."
   },
   {
-    color: "indigo",
+    color: "#723906",
     projectPicture: "img/projects/pagination-content-filter.png",
     videoOrDemo: "demo",
     linkType: "webpage",
@@ -122,7 +122,7 @@ const projectsInformation = [
     knowledge: "Creating routes with frameworks. Google APIs. Database programming."
   },
   {
-    color: "green",
+    color: "#723906",
     projectPicture: "img/projects/fifteen.png",
     videoOrDemo: "demo",
     linkType: "repl",
@@ -144,7 +144,7 @@ const projectsInformation = [
     knowledge: "Injecting HTML with JavaScript, Functions, Objects."
   },
   {
-    color: "indigo",
+    color: "#723906",
     projectPicture: "img/projects/pong.png",
     videoOrDemo: "demo",
     linkType: "webpage",
