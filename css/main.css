@@ -384,17 +384,7 @@ header {
     width: 100%;
     display: grid;
     grid-gap: 0;
-    grid-template-columns: 1fr 1fr;
-}
-
-#photoBlock1 span:nth-child(1) {
-    grid-row: 1 / 2;
-    grid-column: 1 / 2;
-}
-
-#photoBlock1 span:nth-child(2) {
-    grid-row: 1 / 2;
-    grid-column: 2 / 3;
+    grid-template-columns: repeat(auto-fit, 100%);
 }
 
 #photoBlock1 img {
@@ -789,6 +779,10 @@ fieldset {
         grid-template-rows: 5vh repeat(12, 7vh) 1fr;
     }
 
+    #photoBlock1 {
+        grid-template-columns: repeat(auto-fit, 50%);
+    }
+
     #section2 .project {
         grid-template-columns: 20px repeat(5, 25px) 1fr repeat(5, 10%) 20px;
     }
@@ -806,19 +800,8 @@ fieldset {
 
 }
 
-/* For tablets in landscape orientation */
-/* @media only screen and (orientation:landscape) and (min-width: 720px) {
-    #section1 img, #section4 img {
-        width: 60%;
-    }
-    
-    #section1 #photo img {
-        width: 80%;
-    }
-} */
 
-
-/* For laptops and desktop screens */
+/* For tablets in Landscape orientation, and laptop/desktop screens */
 @media only screen and (orientation:landscape) and (min-width: 1020px) {
     .mobile-banner {
         display: none;
@@ -838,6 +821,10 @@ fieldset {
 
     .grid-home {
         grid-template-rows: 5vh repeat(12, 5vh) 1fr;
+    }
+
+    #photoBlock1 {
+        grid-template-columns: repeat(auto-fit, 50%);
     }
 
     #section2 .gridContainer {
