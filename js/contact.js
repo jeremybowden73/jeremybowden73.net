@@ -104,7 +104,7 @@ function validateForm() {
     };
 
     function alertSubmitOK() {
-      e.preventDefault(); // prevent page refresh on submission
+      // e.preventDefault(); // prevent page refresh on submission
       console.log("form submit success");
       submitAction("success");
     };
