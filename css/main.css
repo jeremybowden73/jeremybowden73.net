@@ -417,7 +417,7 @@ header {
     opacity:1;
     transition: opacity 0.5s linear;
     grid-gap: 50px;
-    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
     grid-auto-rows: 200px;
     /* margin-top: 20px; */
 }
@@ -760,6 +760,10 @@ fieldset {
     .projectText {
         font-size: 0.6rem;
     }
+
+    #section2 .gridContainer {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
 }
 
 /* For mobiles in Landscape orientation */
@@ -786,7 +790,7 @@ fieldset {
     }
 
     #section2 .project {
-        grid-template-columns: 80px repeat(5, 25px) 1fr repeat(5, 40px) 80px;
+        grid-template-columns: 20px repeat(5, 25px) 1fr repeat(5, 10%) 20px;
     }
 }
 
@@ -800,9 +804,6 @@ fieldset {
         width: 80%;
     }
 
-    #section2 .gridContainer {
-    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
-    }
 }
 
 /* For tablets in landscape orientation */
