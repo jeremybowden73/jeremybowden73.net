@@ -320,7 +320,7 @@ header {
 }
 
 #section1 a, #section4 a {
-    width: 130%;
+    width: 100%;
 }
 
 #section1 #email, #section4 #email {
@@ -355,10 +355,13 @@ header {
     text-align: center;
 }
 
+#section1 #photo img {
+    border-radius: 50%;
+}
+
 #section1 img, #section4 img {
     object-fit: cover;
     width: 100%;
-    border-radius: 50%;
 }
 
 #section1 #hello {
@@ -379,7 +382,7 @@ header {
     cursor: pointer;
 }
 
-/* photoBlock */
+/* photoBlocks */
 .photoBlock {
     width: 100%;
     padding: 0;
