@@ -71,7 +71,7 @@ const projectsInformation = [
     projectPicture: "img/projects/website-v1.png",
     videoOrDemo: "demo",
     linkType: "webpage",
-    link: "projects-demos/jeremybowden73.github.io/index.html",
+    link: "https://jeremybowden73.github.io/",
     gitHubURL: "https://github.com/jeremybowden73/jeremybowden73.github.io",
     title: "Portfolio Website v1",
     technologies: "HTML, CSS, Git.",
