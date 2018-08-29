@@ -98,13 +98,13 @@ function validateForm() {
     }
 
     function alertSubmitError() {
-      e.preventDefault(); // prevent page refresh on submission
+      e.preventDefault(); // prevent page refresh on submission, so the user can be informed there is a problem
       console.log("form submit failed");
       submitAction("fail");
     };
 
     function alertSubmitOK() {
-      // e.preventDefault(); // prevent page refresh on submission
+      // e.preventDefault(); // DO NOT preventDefault for successful validation, otherwise the form will not be submitted at all!
       console.log("form submit success");
       submitAction("success");
     };
@@ -177,10 +177,8 @@ function submitAction(action) {
     newActionSpan.style.color = "red";
     formSubmitButton.innerHTML = "Re-Submit";
     formSubmitButton.style.background = "red";
-  } else {
-    newActionSpan.innerHTML = "Form submitted. Thanks.";
-    newActionSpan.style.color = "green";
-    formSubmitButton.innerHTML = "DONE"
+  }
+  else {
     formSubmitButton.style.background = "green";
   }
 };
