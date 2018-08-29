@@ -264,15 +264,15 @@ header {
     align-self: center;
     text-align: center;
     padding: 2px 20px;
-    color: #723906;
-    background-color: #fffcef;
+    color: #fffcef;
+    background-color: #723906;
     border-radius: 10px;
     border: 2px solid #723906;
 }
 
 .desktopMenuItem:hover {
-    background-color: #723906;
-    color: #fffcef;
+    background-color: #fffcef;
+    color: #723906;
 }
 
 #desktopHome {
@@ -590,6 +590,29 @@ header {
     color: #297747;
 }
 
+#section3 a {
+    text-decoration: underline blue;
+    color: blue;
+}
+
+#logoDiv {
+    width: 100%;
+    margin: 0%;
+    padding: 0;
+}
+
+#logoDiv span {
+    padding: 0 4%;
+}
+
+.bigLogo img {
+    width: 10vw;
+}
+
+.smallLogo img {
+    width: 28vw;
+}
+
 
 
 
@@ -799,6 +822,14 @@ fieldset {
     #section2 .project {
         grid-template-columns: 20px repeat(5, 25px) 1fr repeat(5, 10%) 20px;
     }
+
+    .bigLogo img {
+        width: 6vw;
+    }
+
+    .smallLogo img {
+        width: 20vw;
+    }
 }
 
 /* For tablets in portrait orientation */
@@ -811,6 +842,13 @@ fieldset {
         width: 80%;
     }
 
+    .bigLogo img {
+        width: 6vw;
+    }
+
+    .smallLogo img {
+        width: 20vw;
+    }
 }
 
 
@@ -841,9 +879,18 @@ fieldset {
     }
 
     #section2 .gridContainer {
-    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+    }
+
+    .bigLogo img {
+        width: 4vw;
+    }
+
+    .smallLogo img {
+        width: 10vw;
     }
 }
+
 
 
 @media print,
