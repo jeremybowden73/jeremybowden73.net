@@ -379,23 +379,34 @@ header {
     cursor: pointer;
 }
 
-/* photoBlock1 */
-#photoBlock1 {
+/* photoBlock */
+.photoBlock {
     width: 100%;
+    padding: 0;
+    margin: 0;
     display: grid;
     grid-gap: 0;
     grid-template-columns: repeat(auto-fit, 100%);
 }
 
-#photoBlock1 img {
+.photoBlock img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
+
+#photoBlock2 span {
+    padding: 1%;
+    background-color: #f2fff7;
+}
+
+
 
 /* SECTION 2 (PROJECTS PAGE) */
 
 #section2 {
     background-color: #fffcef;
-    padding: 20px;
+    padding: 20px 20px 100px;
 }
 
 #section2 .heading {
@@ -568,13 +579,12 @@ header {
 /* SECTION 3 (MORE ABOUT ME PAGE) */
 
 #section3 {
-    /* height: 90vh; */
-    background-color: #d8ffe7;
+    background-color: #f2fff7;
     padding: 20px;
 }
 
 #section3 .heading {
-    color: purple;
+    color: #297747;
 }
 
 
@@ -779,7 +789,7 @@ fieldset {
         grid-template-rows: 5vh repeat(12, 7vh) 1fr;
     }
 
-    #photoBlock1 {
+    .photoBlock {
         grid-template-columns: repeat(auto-fit, 50%);
     }
 
@@ -823,7 +833,7 @@ fieldset {
         grid-template-rows: 5vh repeat(12, 5vh) 1fr;
     }
 
-    #photoBlock1 {
+    .photoBlock {
         grid-template-columns: repeat(auto-fit, 50%);
     }
 
