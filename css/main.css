@@ -119,10 +119,10 @@ a:hover {
     color: currentColor;
 }
 
-a:link {
-    /* text-decoration: none; */
-    /* color: #222; */
-}
+/* a:link {
+    text-decoration: none;
+    color: #222;
+} */
 
 header {
     position: sticky;
