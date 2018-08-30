@@ -111,16 +111,17 @@ body {
     margin: 0;
 }
 
-a:visited {
+/* a:visited {
     color: #222;
-}
+} */
 
 a:hover {
     color: currentColor;
 }
 
 a:link {
-    text-decoration: none;
+    /* text-decoration: none; */
+    /* color: #222; */
 }
 
 header {
@@ -847,6 +848,10 @@ fieldset {
     .smallLogo img {
         width: 20vw;
     }
+
+    .photoBlock {
+        grid-template-columns: repeat(auto-fit, 50%);
+    }
 }
 
 
@@ -873,7 +878,7 @@ fieldset {
     }
 
     .photoBlock {
-        grid-template-columns: repeat(auto-fit, 50%);
+        grid-template-columns: repeat(auto-fit, 25%);
     }
 
     #section2 .gridContainer {
