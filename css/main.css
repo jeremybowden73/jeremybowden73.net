@@ -877,7 +877,11 @@ fieldset {
         grid-template-rows: 5vh repeat(12, 5vh) 1fr;
     }
 
-    .photoBlock {
+    #photoBlock1 {
+        grid-template-columns: repeat(auto-fit, 50%);
+    }
+
+    #photoBlock2 {
         grid-template-columns: repeat(auto-fit, 25%);
     }
 
