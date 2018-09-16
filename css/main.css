@@ -109,6 +109,7 @@ textarea {
 body {
     display: block;
     margin: 0;
+    width: 100%;
 }
 
 /* a:visited {
@@ -649,7 +650,7 @@ fieldset {
  }
 
  input {
-     width: 96%;
+     width: 90%;
      outline: none;
      border: 1px solid #222;
      border-radius: 5px;
@@ -786,8 +787,20 @@ fieldset {
         font-size: 0.6rem;
     }
 
+    .menu-name {
+        font-size: 1.7rem;
+    }
+
+    #section1 #blurb {
+        font-size: 0.8em;
+    }
+
     #section2 .gridContainer {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+
+    input {
+        width: 72%;
     }
 }
 
