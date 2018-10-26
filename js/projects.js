@@ -2,6 +2,17 @@
 const projectsInformation = [
   {
     color: "#723906",
+    projectPicture: "img/projects/beavers-directory.png",
+    videoOrDemo: "demo",
+    linkType: "webpage",
+    link: "https://beavers-directory.azurewebsites.net",
+    gitHubURL: "https://github.com/jeremybowden73/Beavers-Directory",
+    title: "Beaver Scout Directory",
+    technologies: "C#, .NET Core, Cloud hosting, Entity Framework",
+    knowledge: "Building a .NET Core MVC web app with database. Hosting app on cloud server."
+  },
+  {
+    color: "#723906",
     projectPicture: "img/projects/web-scraper.png",
     videoOrDemo: "demo",
     linkType: "webpage",
