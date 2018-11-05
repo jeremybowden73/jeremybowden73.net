@@ -141,7 +141,7 @@ const projectsInformation = [
     gitHubURL: "https://github.com/jeremybowden73/Game-of-Fifteen",
     title: "Game Of Fifteen",
     technologies: "C.",
-    knowledge: "Low-level functionasl programming: file access, loops, conditionals."
+    knowledge: "Low-level functional programming: file access, loops, conditionals."
   },
   {
     color: "#723906",
