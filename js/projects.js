@@ -2,6 +2,17 @@
 const projectsInformation = [
   {
     color: "#723906",
+    projectPicture: "img/projects/beavers-directory-api.png",
+    videoOrDemo: "demo",
+    linkType: "webpage",
+    link: "https://beavers-directory.azurewebsites.net/Home/ApiDocs",
+    gitHubURL: "https://github.com/jeremybowden73/Beavers-Directory/tree/master/BeaversDirectory/APIcontrollers",
+    title: "Web API",
+    technologies: "REST API, C#, .NET Core",
+    knowledge: "Routing requests in API controller. Creating API documentation."
+  },
+  {
+    color: "#723906",
     projectPicture: "img/projects/beavers-directory.png",
     videoOrDemo: "demo",
     linkType: "webpage",
