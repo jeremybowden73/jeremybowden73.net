@@ -708,6 +708,10 @@ fieldset {
     display: none !important;
 }
 
+.show {
+    display: inline-block !important;
+}
+
 /*
  * Hide only visually, but have it available for screen readers:
  * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility

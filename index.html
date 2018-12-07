@@ -169,13 +169,17 @@
       </a>
     </div>
 
-    <form name="jeremybowden.net-contact" method="POST" action="#section4" netlify>
+    <form name="jeremybowden.net-contact" method="POST" action="#section4" netlify-honeypot="bot-field" netlify>
       <fieldset>
+        <p class="show">
+          <label>Don’t fill this out if you're human:</label>
+          <input name="bot-field" />
+        </p>
         <label for="name">Name (max 30 characters):</label>
         <input type="text" id="name" name="user_name">
 
         <label for="mail">Email:</label>
-        <input type="email" id="mail" name="user_email">
+        <input type="email" id="mail" name="user_email" class="show">
 
         <label for="purpose">Message purpose (please select one):</label>
         <select id="purpose" name="user_purpose">
