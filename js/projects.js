@@ -7,20 +7,20 @@ const projectsInformation = [
     linkType: "webpage",
     link: "https://annesdecoratingservices.azurewebsites.net/",
     gitHubURL: "https://github.com/jeremybowden73/annesdecoratingservices-azure",
-    title: "Anne's Decorating Services",
+    title: "Anne's Decorating Servs",
     technologies: "C#, .NET, Azure, CSS, HTML, Bootstrap",
-    knowledge: "Create and implement a business website using .NET; host on cloud server."
+    knowledge: "Creating and cloud-hosting a business website using .NET."
   },
   {
     color: "#723906",
     projectPicture: "img/projects/anagram-csharp.png",
     videoOrDemo: "demo",
     linkType: "webpage",
-    link: "https://beavers-directory.azurewebsites.net/Home/ApiDocs",
-    gitHubURL: "https://github.com/jeremybowden73/Beavers-Directory/tree/master/BeaversDirectory/APIcontrollers",
-    title: "Web API",
-    technologies: "REST API, C#, .NET Core",
-    knowledge: "Routing requests in API controller. Creating API documentation."
+    link: "https://anagram-jeremy-bowden.azurewebsites.net/",
+    gitHubURL: "https://github.com/jeremybowden73/Anagram-.NET",
+    title: "Anagram Maker (C#)",
+    technologies: "C#, .NET Core, TDD, Moq",
+    knowledge: "Using mocks in unit tests. Porting code from C to C#."
   },
   {
     color: "#723906",
